@@ -1,0 +1,1042 @@
+[
+  {
+    "id": 1,
+    "topic": "Introduction to Computer Systems",
+    "question": "Which component is considered the heart of a computer system?",
+    "options": {
+      "A": "Memory",
+      "B": "CPU",
+      "C": "Keyboard",
+      "D": "Monitor"
+    },
+    "correct_answer": "B",
+    "explanation": "ጎበዝ! የኛ ጀግና! CPU የኮምፒውተሩ ልብ ነው። መመሪያዎችን ያስኬዳል፣ ዳታን ይሠራል፣ የሌሎችንም ክፍሎች አሠራር ይቆጣጠራል።"
+  },
+  {
+    "id": 2,
+    "topic": "Introduction to Computer Systems",
+    "question": "Which of the following is NOT a main component of a computer system as listed in the lecture?",
+    "options": {
+      "A": "CPU",
+      "B": "Memory",
+      "C": "Input/Output interfaces",
+      "D": "A social media account"
+    },
+    "correct_answer": "D",
+    "explanation": "ኧረ ይህን ማን አስገባው! የሶሻል ሚዲያ መለያ የሃርድዌር ክፍል አይደለም። CPU፣ Memory እና I/O interfaces በትምህርቱ የተጠቀሱ ናቸው።"
+  },
+  {
+    "id": 3,
+    "topic": "CPU Components",
+    "question": "Which three components are identified as parts of the microprocessor in the lecture?",
+    "options": {
+      "A": "ALU, Control Unit, and Registers",
+      "B": "Monitor, Keyboard, and Mouse",
+      "C": "RAM, Printer, and Scanner",
+      "D": "Hard Disk, Monitor, and Speaker"
+    },
+    "correct_answer": "A",
+    "explanation": "ትክክል! ALU ስሌትና ንጽጽር ይሠራል፣ Control Unit ሥራውን ይመራል፣ Registers ደግሞ ዳታና አድራሻዎችን ለጊዜው ይይዛሉ።"
+  },
+  {
+    "id": 4,
+    "topic": "System Buses",
+    "question": "Which bus selects a memory location or an I/O device for the CPU?",
+    "options": {
+      "A": "Data Bus",
+      "B": "Control Bus",
+      "C": "Address Bus",
+      "D": "Power Bus"
+    },
+    "correct_answer": "C",
+    "explanation": "Address Bus የማስታወሻ ቦታን ወይም I/O መሣሪያን ይመርጣል። Data Bus አድራሻ አይደለም፤ መረጃ ያጓጉዛል።"
+  },
+  {
+    "id": 5,
+    "topic": "System Buses",
+    "question": "What is the primary function of the Data Bus?",
+    "options": {
+      "A": "To select a memory address",
+      "B": "To transfer information between the CPU, memory, and I/O devices",
+      "C": "To store programs permanently",
+      "D": "To decode every instruction independently"
+    },
+    "correct_answer": "B",
+    "explanation": "ጎበዝ! Data Bus ዳታን ያጓጉዛል። Address Bus የት እንደሚሄድ ይጠቁማል፤ Data Bus ግን መረጃውን ይይዛል። ሁለቱን አትቀላቅል!"
+  },
+  {
+    "id": 6,
+    "topic": "System Buses",
+    "question": "Which bus carries control signals that coordinate the CPU with memory and I/O devices?",
+    "options": {
+      "A": "Address Bus",
+      "B": "Data Bus",
+      "C": "Control Bus",
+      "D": "Storage Bus only"
+    },
+    "correct_answer": "C",
+    "explanation": "Control Bus የቁጥጥር ምልክቶችን (እንደ clock እና interrupt) ያስተላልፋል። ሦስቱን ባሶች አለያይተህ አስታውስ!"
+  },
+  {
+    "id": 7,
+    "topic": "System Buses",
+    "question": "According to the lecture, what range of data bus sizes is mentioned for microprocessors?",
+    "options": {
+      "A": "1 to 4 bits",
+      "B": "8 to 64 bits",
+      "C": "100 to 500 bits",
+      "D": "Only 8 bits"
+    },
+    "correct_answer": "B",
+    "explanation": "ትክክል! በስላይዱ ከ8 ቢት እስከ 64 ቢት ያለው የዳታ መጠን ተጠቅሷል። 8 ቢት ብቸኛው መጠን አይደለም።"
+  },
+  {
+    "id": 8,
+    "topic": "Hardware and Software",
+    "question": "What is computer hardware?",
+    "options": {
+      "A": "Instructions that tell a computer what to do",
+      "B": "Physical components of a computer system",
+      "C": "Only the computer's operating system",
+      "D": "Data that has been processed"
+    },
+    "correct_answer": "B",
+    "explanation": "Hardware በአካል የምንነካቸው የኮምፒውተር ክፍሎች ናቸው (Keyboard፣ Monitor፣ CPU)። Software ደግሞ የሚያዙ ፕሮግራሞች ናቸው።"
+  },
+  {
+    "id": 9,
+    "topic": "Hardware and Software",
+    "question": "Which of the following is an example of software?",
+    "options": {
+      "A": "Mouse",
+      "B": "Scanner",
+      "C": "Microsoft Excel",
+      "D": "Monitor"
+    },
+    "correct_answer": "C",
+    "explanation": "Microsoft Excel መመሪያዎችን የሚያስፈጽም ፕሮግራም ስለሆነ ሶፍትዌር ነው። Mouse፣ Scanner እና Monitor ሃርድዌር ናቸው።"
+  },
+  {
+    "id": 10,
+    "topic": "Hardware and Software",
+    "question": "What is the relationship between hardware and software?",
+    "options": {
+      "A": "They are identical",
+      "B": "Software never needs hardware",
+      "C": "Hardware and software are interdependent",
+      "D": "Hardware is always a program"
+    },
+    "correct_answer": "C",
+    "explanation": "ሃርድዌርና ሶፍትዌር እርስ በርስ ይፈላለጋሉ። ሶፍትዌር በሃርድዌር ላይ ይሠራል፤ ሃርድዌርም ለብዙ ተግባራት ሶፍትዌር ይፈልጋል።"
+  },
+  {
+    "id": 11,
+    "topic": "Introduction to Microprocessors",
+    "question": "What is a microprocessor?",
+    "options": {
+      "A": "A single chip capable of processing data and executing instructions",
+      "B": "A device used only to print documents",
+      "C": "A type of secondary storage",
+      "D": "A computer program without hardware"
+    },
+    "correct_answer": "A",
+    "explanation": "ማይክሮፕሮሰሰር ዳታን የሚያስኬድና መመሪያዎችን የሚፈጽም በአንድ ቺፕ የተሠራ ክፍል ነው። አታሚ ወይም ሃርድ ዲስክ አይደለም!"
+  },
+  {
+    "id": 12,
+    "topic": "Introduction to Microprocessors",
+    "question": "Why is a microprocessor often called the brain of a microcomputer?",
+    "options": {
+      "A": "It displays all images",
+      "B": "It executes instructions and controls system operations",
+      "C": "It stores every file permanently",
+      "D": "It replaces all input and output devices"
+    },
+    "correct_answer": "B",
+    "explanation": "ማይክሮፕሮሰሰሩ መመሪያዎችን ይፈጽማል፣ ዳታን ያስኬዳል፣ ሥርዓቱን ይቆጣጠራል። ስለዚህ አንጎል ተብሎ ይጠራል።"
+  },
+  {
+    "id": 13,
+    "topic": "Microcomputer",
+    "question": "Which statement correctly describes a microcomputer?",
+    "options": {
+      "A": "A computer that uses a microprocessor as its CPU",
+      "B": "A computer without memory",
+      "C": "A computer that cannot execute programs",
+      "D": "A device that only accepts keyboard input"
+    },
+    "correct_answer": "A",
+    "explanation": "Microcomputer ማይክሮፕሮሰሰርን እንደ CPU የሚጠቀም ትንሽ ኮምፒውተር ነው። ላፕቶፕ፣ ዴስክቶፕ፣ ታብሌት እና ስማርትፎን ምሳሌዎች ናቸው።"
+  },
+  {
+    "id": 14,
+    "topic": "Instruction Cycle",
+    "question": "Which sequence describes the basic instruction cycle presented in the lecture?",
+    "options": {
+      "A": "Execute, Fetch, Decode",
+      "B": "Decode, Execute, Fetch",
+      "C": "Fetch, Decode, Execute",
+      "D": "Store, Print, Delete"
+    },
+    "correct_answer": "C",
+    "explanation": "ትክክል! Fetch → Decode → Execute። መጀመሪያ መመሪያው ከማስታወሻ ይወሰዳል፣ ከዚያ ይተረጎማል፣ በመጨረሻ ይፈጸማል።"
+  },
+  {
+    "id": 15,
+    "topic": "Instruction Cycle",
+    "question": "What happens during the fetch stage?",
+    "options": {
+      "A": "The instruction is retrieved from memory",
+      "B": "The monitor prints a document",
+      "C": "The instruction is permanently erased",
+      "D": "The ALU always divides two numbers"
+    },
+    "correct_answer": "A",
+    "explanation": "Fetch ማለት መመሪያውን ከማስታወሻ መውሰድ ነው። ከዚያ በኋላ ይተረጎማል፣ ይፈጸማል። Fetch ማለት ማጥፋት አይደለም!"
+  },
+  {
+    "id": 16,
+    "topic": "Instruction Cycle",
+    "question": "What is the purpose of decoding an instruction?",
+    "options": {
+      "A": "To convert the instruction into a form the computer can interpret",
+      "B": "To shut down the computer",
+      "C": "To permanently store all output",
+      "D": "To change hardware into software"
+    },
+    "correct_answer": "A",
+    "explanation": "Decode ማለት የተወሰደውን መመሪያ መተርጎም ነው። Control Unit መመሪያው ምን እንደሚያዝዝ ለይቶ የቁጥጥር ምልክቶችን ይልካል።"
+  },
+  {
+    "id": 17,
+    "topic": "Control Unit",
+    "question": "What is the primary role of the Control Unit?",
+    "options": {
+      "A": "To control the flow of data and instructions",
+      "B": "To permanently store all user files",
+      "C": "To act as a keyboard",
+      "D": "To perform every arithmetic calculation itself"
+    },
+    "correct_answer": "A",
+    "explanation": "Control Unit የዳታና የመመሪያዎችን ፍሰት ይቆጣጠራል። ሁሉንም ስሌት ራሱ ከመሥራት ይልቅ ሌሎች ክፍሎችን ይመራል።"
+  },
+  {
+    "id": 18,
+    "topic": "Control Unit",
+    "question": "According to the lecture, does the Control Unit execute instructions by itself?",
+    "options": {
+      "A": "Yes, it performs every operation alone",
+      "B": "No, it directs other processing elements to execute instructions",
+      "C": "Yes, but only when the computer is off",
+      "D": "No, because it is a secondary storage device"
+    },
+    "correct_answer": "B",
+    "explanation": "አይደለም! Control Unit አስተባባሪ ነው፤ ሁሉንም ስሌት በራሱ አይሠራም። የስሌት ሥራውን ALU ያከናውናል።"
+  },
+  {
+    "id": 19,
+    "topic": "ALU",
+    "question": "What does ALU stand for?",
+    "options": {
+      "A": "Advanced Logic Utility",
+      "B": "Arithmetic Logic Unit",
+      "C": "Automatic Loading Unit",
+      "D": "Address Location Utility"
+    },
+    "correct_answer": "B",
+    "explanation": "ALU ማለት Arithmetic Logic Unit ነው። Arithmetic የሒሳብ ስሌትን፣ Logic ደግሞ ሎጂካዊ ንጽጽርን ይመለከታል።"
+  },
+  {
+    "id": 20,
+    "topic": "ALU",
+    "question": "Which of the following is an arithmetic operation performed by the ALU?",
+    "options": {
+      "A": "Addition",
+      "B": "Comparing whether a value is greater than another",
+      "C": "Selecting a keyboard",
+      "D": "Displaying a picture"
+    },
+    "correct_answer": "A",
+    "explanation": "Addition የሒሳብ ስሌት ነው፤ ALU ይህን ያከናውናል። አንዱ ከሌላው ይበልጣል ብሎ ማነጻጸር ግን ሎጂካዊ ክዋኔ ነው።"
+  },
+  {
+    "id": 21,
+    "topic": "ALU",
+    "question": "Which operation is a logical operation?",
+    "options": {
+      "A": "Multiplication",
+      "B": "Division",
+      "C": "Checking whether mark > 80",
+      "D": "Adding 5 and 7"
+    },
+    "correct_answer": "C",
+    "explanation": "mark > 80 እውነት ወይስ ሐሰት ብሎ የሚፈትሽ ሎጂካዊ ክዋኔ ነው። መደመር፣ ማባዛትና ማካፈል የሒሳብ ክዋኔዎች ናቸው።"
+  },
+  {
+    "id": 22,
+    "topic": "Registers",
+    "question": "What is a register in a microprocessor?",
+    "options": {
+      "A": "A temporary storage location inside the CPU",
+      "B": "A permanent external hard drive",
+      "C": "An output-only device",
+      "D": "A type of programming language"
+    },
+    "correct_answer": "A",
+    "explanation": "Register በCPU ውስጥ የሚገኝ ጊዜያዊ ማከማቻ ነው። ዳታን ወይም አድራሻን ለጊዜው ይይዛል። እንደ ትንሽ የሥራ ጠረጴዛ አስበው!"
+  },
+  {
+    "id": 23,
+    "topic": "Registers",
+    "question": "Why are registers useful during instruction processing?",
+    "options": {
+      "A": "They temporarily hold data and addresses needed by the CPU",
+      "B": "They replace the entire operating system",
+      "C": "They permanently store all documents",
+      "D": "They turn output devices into input devices"
+    },
+    "correct_answer": "A",
+    "explanation": "Registers ሲፒዩ በሚሠራበት ጊዜ የሚያስፈልገውን ዳታና አድራሻ ለጊዜው ይይዛሉ። ፋይሎችን በቋሚነት አያከማቹም።"
+  },
+  {
+    "id": 24,
+    "topic": "Microcomputer Architecture",
+    "question": "How many functional sections are listed for the hardware of a microcomputer system?",
+    "options": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Four",
+      "D": "Seven"
+    },
+    "correct_answer": "C",
+    "explanation": "አራት ዋና ክፍሎች ተጠቅሰዋል፦ Input Unit፣ Microprocessing Unit፣ Memory Unit እና Output Unit። አራቱን በስም አስታውስ!"
+  },
+  {
+    "id": 25,
+    "topic": "Microcomputer Architecture",
+    "question": "Which of the following is an input device?",
+    "options": {
+      "A": "Printer",
+      "B": "Monitor",
+      "C": "Keyboard",
+      "D": "Projector"
+    },
+    "correct_answer": "C",
+    "explanation": "Keyboard ዳታና ትዕዛዞችን ወደ ኮምፒውተር የሚያስገባ የግቤት መሣሪያ ነው። Monitor፣ Printer እና Projector የውጤት መሣሪያዎች ናቸው።"
+  },
+  {
+    "id": 26,
+    "topic": "Microcomputer Architecture",
+    "question": "Which of the following is an output device?",
+    "options": {
+      "A": "Scanner",
+      "B": "Mouse",
+      "C": "Keyboard",
+      "D": "Monitor"
+    },
+    "correct_answer": "D",
+    "explanation": "Monitor ውጤቱን በማያ ላይ ያሳያል። Scanner፣ Mouse እና Keyboard የግቤት መሣሪያዎች ናቸው። Input ያስገባል፤ Output ያወጣል!"
+  },
+  {
+    "id": 27,
+    "topic": "Memory",
+    "question": "What is the primary purpose of the memory unit?",
+    "options": {
+      "A": "To store data and instructions",
+      "B": "To display images only",
+      "C": "To type text",
+      "D": "To generate electricity for the computer"
+    },
+    "correct_answer": "A",
+    "explanation": "Memory Unit ዳታንና መመሪያዎችን ያከማቻል። ኮምፒውተሩ የሚያስኬዳቸው ፕሮግራሞችና መረጃዎች በማስታወሻ ውስጥ ይቀመጣሉ።"
+  },
+  {
+    "id": 28,
+    "topic": "RAM and ROM",
+    "question": "Which statement correctly describes RAM?",
+    "options": {
+      "A": "It is always nonvolatile",
+      "B": "It can be read from and written to, and it is volatile",
+      "C": "It is read-only under all circumstances",
+      "D": "It is an input device"
+    },
+    "correct_answer": "B",
+    "explanation": "RAM ሊነበብና ሊጻፍበት ይችላል፤ ቮላታይል ስለሆነ ኃይል ሲቋረጥ ይዘቱ ይጠፋል። ሥራህን በRAM ብቻ አትተወው፤ ፋይልህን አስቀምጥ!"
+  },
+  {
+    "id": 29,
+    "topic": "RAM and ROM",
+    "question": "What does it mean that RAM is volatile memory?",
+    "options": {
+      "A": "It loses its contents when power is turned off",
+      "B": "It cannot be accessed by the CPU",
+      "C": "It can never be written to",
+      "D": "It permanently preserves every file without power"
+    },
+    "correct_answer": "A",
+    "explanation": "Volatile ማለት ኃይል ሲቋረጥ ይዘቱ የሚጠፋ ማለት ነው። RAM ለጊዜያዊ ሥራ ይጠቅማል። ኮምፒውተሩ ሲጠፋ ሁሉም ይቀራል ብለህ አትመን!"
+  },
+  {
+    "id": 30,
+    "topic": "RAM and ROM",
+    "question": "Which statement correctly describes ROM?",
+    "options": {
+      "A": "It is volatile and loses all contents when power is removed",
+      "B": "It is nonvolatile and is used to retain instructions and data",
+      "C": "It is only a pointing device",
+      "D": "It is the same as a printer"
+    },
+    "correct_answer": "B",
+    "explanation": "ROM ቮላታይል ያልሆነ ማስታወሻ ነው፤ ኃይል ሲጠፋም ይዘቱን ይጠብቃል። የኮምፒውተር መነሻ መመሪያዎችን ለማከማቸት ይጠቅማል።"
+  },
+  {
+    "id": 31,
+    "topic": "RAM and ROM",
+    "question": "Which memory type is described in the lecture as read-only and nonvolatile?",
+    "options": {
+      "A": "RAM",
+      "B": "ROM",
+      "C": "Register",
+      "D": "Cache file"
+    },
+    "correct_answer": "B",
+    "explanation": "ROM ማለት Read-Only Memory ነው። ሊነበብ የሚችልና ኃይል ሲጠፋ ይዘቱን የሚጠብቅ ማስታወሻ ነው። የRAM ባህሪ ከዚህ ይለያል።"
+  },
+  {
+    "id": 32,
+    "topic": "Memory",
+    "question": "Which of the following is an example of secondary storage mentioned in the lecture?",
+    "options": {
+      "A": "CPU register",
+      "B": "Hard disk",
+      "C": "ALU",
+      "D": "Control Unit"
+    },
+    "correct_answer": "B",
+    "explanation": "Hard disk የሁለተኛ ደረጃ ማከማቻ ምሳሌ ነው፤ መረጃን ለረጅም ጊዜ ያቆያል። Register፣ ALU እና Control Unit የማይክሮፕሮሰሰሩ ክፍሎች ናቸው።"
+  },
+  {
+    "id": 33,
+    "topic": "Memory",
+    "question": "Why is RAM called Random Access Memory?",
+    "options": {
+      "A": "Because every location can be accessed using its memory address",
+      "B": "Because it stores only random numbers",
+      "C": "Because the CPU cannot locate its contents",
+      "D": "Because its data changes randomly every second"
+    },
+    "correct_answer": "A",
+    "explanation": "በRAM ውስጥ ያሉ ቦታዎች በአድራሻቸው ሊደረስባቸው ይችላሉ። Random Access ማለት ዳታው በዘፈቀደ ይቀየራል ማለት አይደለም፤ የተመረጠ ቦታን በቀጥታ ማግኘት ማለት ነው።"
+  },
+  {
+    "id": 34,
+    "topic": "Types of Microprocessors",
+    "question": "What does the word length of a microprocessor indicate?",
+    "options": {
+      "A": "The physical length of the processor chip",
+      "B": "The size of the standard data unit it processes",
+      "C": "The number of keyboard keys",
+      "D": "The number of programs installed"
+    },
+    "correct_answer": "B",
+    "explanation": "Word Length ፕሮሰሰሩ በአንድ ጊዜ የሚያስኬደውን መደበኛ የዳታ መጠን ያመለክታል። የቺፑ አካላዊ ርዝመት አይደለም፤ ይህ የስም ወጥመድ ነው!"
+  },
+  {
+    "id": 35,
+    "topic": "Types of Microprocessors",
+    "question": "Which set lists the five standard data widths given in the lecture?",
+    "options": {
+      "A": "2, 4, 6, 8, 10 bits",
+      "B": "4, 8, 16, 32, 64 bits",
+      "C": "8, 12, 24, 48, 96 bits",
+      "D": "1, 3, 5, 7, 9 bits"
+    },
+    "correct_answer": "B",
+    "explanation": "አምስቱ መደበኛ ስፋቶች 4-bit፣ 8-bit፣ 16-bit፣ 32-bit እና 64-bit ናቸው። ቁጥሮቹን በቅደም ተከተል አስታውስ።"
+  },
+  {
+    "id": 36,
+    "topic": "Types of Microprocessors",
+    "question": "According to the lecture, which companies are identified as major microprocessor manufacturers?",
+    "options": {
+      "A": "Intel and Motorola",
+      "B": "Microsoft and Adobe",
+      "C": "Google and Facebook",
+      "D": "HP and Dell only"
+    },
+    "correct_answer": "A",
+    "explanation": "እንደ ዋና የማይክሮፕሮሰሰር አምራቾች Intel እና Motorola ተጠቅሰዋል። Microsoft እና Adobe በዋናነት በሶፍትዌር ይታወቃሉ።"
+  },
+  {
+    "id": 37,
+    "topic": "Data Bus Width",
+    "question": "What does data bus width indicate?",
+    "options": {
+      "A": "The number of bits transferred at once",
+      "B": "The number of monitors connected",
+      "C": "The size of the computer case",
+      "D": "The number of software licenses"
+    },
+    "correct_answer": "A",
+    "explanation": "Data Bus Width በአንድ ጊዜ የሚተላለፉ የቢት ብዛትን ያመለክታል። ሰፊ የዳታ ባስ በአንድ ጊዜ ብዙ ቢቶችን ያስተላልፋል።"
+  },
+  {
+    "id": 38,
+    "topic": "8086 and Compatibility",
+    "question": "What is the data bus width of the Intel 8086 according to the lecture?",
+    "options": {
+      "A": "4 bits",
+      "B": "8 bits",
+      "C": "16 bits",
+      "D": "64 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "8086 16-bit የዳታ ባስ አለው። ይህን ከሚደግፈው የማስታወሻ አድራሻ መጠን ጋር አትቀላቅል፤ ሁለቱ የተለያዩ ናቸው።"
+  },
+  {
+    "id": 39,
+    "topic": "8086 and Compatibility",
+    "question": "How much memory can the Intel 8086 address, according to the lecture?",
+    "options": {
+      "A": "64 KB",
+      "B": "256 KB",
+      "C": "1 MB",
+      "D": "64 MB"
+    },
+    "correct_answer": "C",
+    "explanation": "8086 1 Megabyte የማስታወሻ ቦታ ሊያድራሻ ይችላል። 16-bit የዳታ ባስ መኖሩ 16-bit ብቻ አድራሻ አለው ማለት አይደለም።"
+  },
+  {
+    "id": 40,
+    "topic": "Architectural Compatibility",
+    "question": "What does upward compatibility with the 8086 architecture mean in the lecture?",
+    "options": {
+      "A": "Newer processors can run 8086/8088 code; the reverse may fail with newer instructions",
+      "B": "The 8086 can run every instruction ever created for newer processors",
+      "C": "All processors have identical hardware",
+      "D": "Newer processors cannot execute older programs"
+    },
+    "correct_answer": "A",
+    "explanation": "Upward Compatibility ማለት 80286፣ 80386፣ Pentium ያሉ አዳዲስ ፕሮሰሰሮች የ8086/8088 ኮድን ያስኬዳሉ ማለት ነው። አዲስ ትዕዛዞች ሲኖሩ ተቃራኒው አይሠራም።"
+  },
+  {
+    "id": 41,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "In which year was the Intel 4004/4040 introduced according to the lecture?",
+    "options": {
+      "A": "1965",
+      "B": "1971",
+      "C": "1986",
+      "D": "1993"
+    },
+    "correct_answer": "B",
+    "explanation": "በስላይዱ Intel 4004/4040 በ1971 ተጠቅሷል። ይህ የታሪክ ጥያቄ ነው፤ ዓመቱን ከሌሎቹ ፕሮሰሰሮች ጋር አትቀላቅል።"
+  },
+  {
+    "id": 42,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "Who are the two inventors credited with the Intel 4004/4040 in the lecture?",
+    "options": {
+      "A": "Bill Gates and Steve Jobs",
+      "B": "Stanley Mazor and Ted Hoff",
+      "C": "Charles Babbage and Alan Turing",
+      "D": "Tim Berners-Lee and Dennis Ritchie"
+    },
+    "correct_answer": "B",
+    "explanation": "በስላይዱ Stanley Mazor እና Ted Hoff ከIntel 4004/4040 ጋር ተያይዘው ተጠቅሰዋል። Bill Gates እና Steve Jobs አይደሉም።"
+  },
+  {
+    "id": 43,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "What was the clock speed of the Intel 4004/4040 stated in the lecture?",
+    "options": {
+      "A": "500 KHz",
+      "B": "740 KHz",
+      "C": "3 MHz",
+      "D": "66 MHz"
+    },
+    "correct_answer": "B",
+    "explanation": "የIntel 4004/4040 clock speed 740 KHz ተብሎ ተጠቅሷል። ከ8008 የ500 KHz እና ከ8085 የ3 MHz ጋር አትቀላቅል።"
+  },
+  {
+    "id": 44,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "Which processor is listed as an 8-bit microprocessor introduced in 1972?",
+    "options": {
+      "A": "Intel 8008",
+      "B": "Intel 8086",
+      "C": "Intel 80386",
+      "D": "Intel Core 2"
+    },
+    "correct_answer": "A",
+    "explanation": "Intel 8008 በ1972 የተጠቀሰ 8-bit ፕሮሰሰር ነው። 8086 16-bit ነው፤ 80386 ደግሞ ከ32-bit ትውልድ ጋር ይያያዛል።"
+  },
+  {
+    "id": 45,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "Which processor was introduced in 1974 according to the lecture?",
+    "options": {
+      "A": "Intel 4004",
+      "B": "Intel 8080",
+      "C": "Intel 8085",
+      "D": "Intel Pentium"
+    },
+    "correct_answer": "B",
+    "explanation": "Intel 8080 በ1974 ተጠቅሷል። 8085 በ1976 እንደተጠቀሰ አስታውስ። ሁለቱን ቁጥሮች አትቀያይር!"
+  },
+  {
+    "id": 46,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "Which processor is listed as having a clock speed of 3 MHz and 6,500 transistors?",
+    "options": {
+      "A": "Intel 8008",
+      "B": "Intel 8080",
+      "C": "Intel 8085",
+      "D": "Intel 80386"
+    },
+    "correct_answer": "C",
+    "explanation": "Intel 8085 3 MHz የclock speed እና 6,500 transistors አሉት። እነዚህ የታሪክ ዝርዝሮች ስለሆኑ በሠንጠረዥ ማጥናት ይረዳል።"
+  },
+  {
+    "id": 47,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "Which processor is identified in the lecture as a 32-bit microprocessor introduced in 1986?",
+    "options": {
+      "A": "Intel 4004",
+      "B": "Intel 8085",
+      "C": "Intel 80386",
+      "D": "Intel Core 2"
+    },
+    "correct_answer": "C",
+    "explanation": "Intel 80386 በስላይዱ የ32-bit ፕሮሰሰር ምሳሌ ሆኖ ተጠቅሷል። የተሰጠው ዓመት 1986 ነው።"
+  },
+  {
+    "id": 48,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "In which year was the Pentium processor introduced according to the lecture?",
+    "options": {
+      "A": "1971",
+      "B": "1986",
+      "C": "1993",
+      "D": "2006"
+    },
+    "correct_answer": "C",
+    "explanation": "Pentium በ1993 ተጠቅሷል። 2006 ደግሞ Intel Core 2 ከሚጠቀስበት ዓመት ጋር ይያያዛል።"
+  },
+  {
+    "id": 49,
+    "topic": "Intel Microprocessor Evolution",
+    "question": "Which processor family is listed as having appeared in 2006?",
+    "options": {
+      "A": "Intel 4004",
+      "B": "Intel 8008",
+      "C": "Intel Core 2",
+      "D": "Intel 8086"
+    },
+    "correct_answer": "C",
+    "explanation": "Intel Core 2 በ2006 ከተጠቀሱት ፕሮሰሰሮች ነው። የታሪክ ጥያቄዎች ሲመጡ የፕሮሰሰሩን ስምና ዓመት በጥንቃቄ አዛምድ።"
+  },
+  {
+    "id": 50,
+    "topic": "Microprocessor Terminology",
+    "question": "What is an instruction set?",
+    "options": {
+      "A": "The set of instructions a microprocessor can understand",
+      "B": "A collection of monitors",
+      "C": "The size of the computer's screen",
+      "D": "A type of secondary memory"
+    },
+    "correct_answer": "A",
+    "explanation": "Instruction Set ማይክሮፕሮሰሰሩ ሊረዳቸውና ሊፈጽማቸው የሚችላቸው መመሪያዎች ስብስብ ነው። እያንዳንዱ ፕሮሰሰር የሌሎችን መመሪያ ሁሉ አይረዳም።"
+  },
+  {
+    "id": 51,
+    "topic": "Microprocessor Terminology",
+    "question": "What unit is commonly used to express clock speed?",
+    "options": {
+      "A": "Kilograms",
+      "B": "Megahertz (MHz) or Gigahertz (GHz)",
+      "C": "Liters",
+      "D": "Pixels only"
+    },
+    "correct_answer": "B",
+    "explanation": "Clock Speed በMHz ወይም GHz ይገለጻል፤ እነዚህ የድግግሞሽ መለኪያዎች ናቸው። ፕሮሰሰርን በኪሎ አንመዝነውም!"
+  },
+  {
+    "id": 52,
+    "topic": "Microprocessor Terminology",
+    "question": "According to the lecture, word length depends on which combination of processor components?",
+    "options": {
+      "A": "Internal data bus, registers, and ALU",
+      "B": "Monitor, printer, and scanner",
+      "C": "Mouse, keyboard, and speaker",
+      "D": "Hard disk, webcam, and projector"
+    },
+    "correct_answer": "A",
+    "explanation": "Word Length ከinternal data bus፣ registers እና ALU ስፋት ጋር ይያያዛል። የማያ መጠን ወይም የኪቦርድ ቁልፎች ብዛት አይወስኑትም።"
+  },
+  {
+    "id": 53,
+    "topic": "Number Systems",
+    "question": "What is the base of the decimal number system?",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "10",
+      "D": "16"
+    },
+    "correct_answer": "C",
+    "explanation": "Decimal መሠረቱ 10 ነው፤ ከ0 እስከ 9 ያሉ አሥር አሃዞችን ይጠቀማል። ይህ መሠረታዊ ጥያቄ ነው!"
+  },
+  {
+    "id": 54,
+    "topic": "Number Systems",
+    "question": "Which digits are allowed in the binary number system?",
+    "options": {
+      "A": "0 and 1",
+      "B": "0 through 7",
+      "C": "0 through 9",
+      "D": "0 through 9 and A through F"
+    },
+    "correct_answer": "A",
+    "explanation": "Binary ሁለት አሃዞችን ብቻ ይጠቀማል፦ 0 እና 1። በbinary ቁጥር ውስጥ 2 ካየህ ቁጥሩ ትክክል አይደለም።"
+  },
+  {
+    "id": 55,
+    "topic": "Number Systems",
+    "question": "Which digits are allowed in the octal number system?",
+    "options": {
+      "A": "0 and 1 only",
+      "B": "0 through 7",
+      "C": "0 through 9",
+      "D": "0 through 9 and A through F"
+    },
+    "correct_answer": "B",
+    "explanation": "Octal መሠረቱ 8 ነው፤ ስለዚህ ከ0 እስከ 7 ያሉ አሃዞችን ይጠቀማል። 8 እና 9 በoctal ውስጥ አይገቡም።"
+  },
+  {
+    "id": 56,
+    "topic": "Number Systems",
+    "question": "Which set represents the hexadecimal digits?",
+    "options": {
+      "A": "0 and 1 only",
+      "B": "0 through 7",
+      "C": "0 through 9 and A through F",
+      "D": "A through Z only"
+    },
+    "correct_answer": "C",
+    "explanation": "Hexadecimal መሠረቱ 16 ነው፤ 0–9 እና A–F ይጠቀማል። A=10 እና F=15 መሆናቸውን አስታውስ።"
+  },
+  {
+    "id": 57,
+    "topic": "Number Systems",
+    "question": "What is the decimal value of the hexadecimal digit F?",
+    "options": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "15"
+    },
+    "correct_answer": "D",
+    "explanation": "Hexadecimal ውስጥ A=10፣ B=11፣ C=12፣ D=13፣ E=14፣ F=15 ናቸው። ጎበዝ! በቅደም ተከተል አስታውስ።"
+  },
+  {
+    "id": 58,
+    "topic": "Number Systems",
+    "question": "In a positional number system, what does each digit's position represent?",
+    "options": {
+      "A": "A power of the number system's base",
+      "B": "The digit's color",
+      "C": "The number of letters in the number",
+      "D": "The physical size of the storage device"
+    },
+    "correct_answer": "A",
+    "explanation": "በpositional ሥርዓት የአሃዝ ቦታ የመሠረቱን ኃይል ይወክላል። ለምሳሌ በ789 ውስጥ 7 በ10²፣ 8 በ10¹፣ 9 በ10⁰ ይባዛሉ።"
+  },
+  {
+    "id": 59,
+    "topic": "Decimal Number System",
+    "question": "What is the weight of the digit 8 in the decimal number 789?",
+    "options": {
+      "A": "8",
+      "B": "80",
+      "C": "800",
+      "D": "8000"
+    },
+    "correct_answer": "B",
+    "explanation": "በ789 ውስጥ 8 በአስሮች ቦታ ላይ ነው። ስለዚህ 8 × 10¹ = 80 ነው። የአሃዙን ዋጋ በቦታው ዋጋ ማባዛት እንዳትረሳ!"
+  },
+  {
+    "id": 60,
+    "topic": "Decimal Fractions",
+    "question": "What is the weight of the digit 2 in the decimal fraction 0.125?",
+    "options": {
+      "A": "2",
+      "B": "0.2",
+      "C": "0.02",
+      "D": "0.002"
+    },
+    "correct_answer": "C",
+    "explanation": "በ0.125 ውስጥ 2 በመቶኛ ቦታ (10⁻²) ላይ ነው። ስለዚህ 2 × 0.01 = 0.02 ነው። ከዴሲማል ነጥብ በኋላ ያሉ ቦታዎች 10⁻¹፣ 10⁻²፣ 10⁻³ ናቸው።"
+  },
+  {
+    "id": 61,
+    "topic": "Binary to Decimal Conversion",
+    "question": "What is the decimal equivalent of binary 10101₂?",
+    "options": {
+      "A": "19",
+      "B": "20",
+      "C": "21",
+      "D": "23"
+    },
+    "correct_answer": "C",
+    "explanation": "10101₂ = 16+0+4+0+1 = 21። ጎበዝ! በእያንዳንዱ ቦታ የ2ን ኃይል በትክክል ካስተዋልክ ስሌቱ ቀላል ነው።"
+  },
+  {
+    "id": 62,
+    "topic": "Octal to Decimal Conversion",
+    "question": "What is the decimal equivalent of octal 2057₈?",
+    "options": {
+      "A": "1057",
+      "B": "1071",
+      "C": "2057",
+      "D": "1087"
+    },
+    "correct_answer": "B",
+    "explanation": "2057₈ = (2×8³)+(0×8²)+(5×8¹)+(7×8⁰) = 1024+0+40+7 = 1071። በoctal የቦታ ኃይሎች በ8 ላይ ይመሠረታሉ።"
+  },
+  {
+    "id": 63,
+    "topic": "Hexadecimal to Decimal Conversion",
+    "question": "What is the decimal equivalent of hexadecimal 1AF₁₆?",
+    "options": {
+      "A": "256",
+      "B": "416",
+      "C": "431",
+      "D": "451"
+    },
+    "correct_answer": "C",
+    "explanation": "1AF₁₆ = (1×16²)+(10×16¹)+(15×16⁰) = 256+160+15 = 431። A=10 እና F=15 መሆናቸውን ተጠቅመናል።"
+  },
+  {
+    "id": 64,
+    "topic": "Hexadecimal to Decimal Conversion",
+    "question": "What is the decimal equivalent of hexadecimal FA2E₁₆?",
+    "options": {
+      "A": "64046",
+      "B": "64206",
+      "C": "61440",
+      "D": "64064"
+    },
+    "correct_answer": "A",
+    "explanation": "FA2E₁₆ = (15×16³)+(10×16²)+(2×16¹)+(14) = 61440+2560+32+14 = 64046። አሃዞቹን ከቦታ ኃይሎች ጋር አዛምድ።"
+  },
+  {
+    "id": 65,
+    "topic": "Octal to Decimal Conversion",
+    "question": "What is the decimal equivalent of octal 765₈?",
+    "options": {
+      "A": "493",
+      "B": "501",
+      "C": "765",
+      "D": "517"
+    },
+    "correct_answer": "B",
+    "explanation": "765₈ = (7×8²)+(6×8¹)+(5×8⁰) = 448+48+5 = 501። የአሃዞች ቦታ ከ8²፣ 8¹ እና 8⁰ ጋር ይያያዛል።"
+  },
+  {
+    "id": 66,
+    "topic": "Binary Fractions",
+    "question": "What is the decimal equivalent of binary 101.01₂?",
+    "options": {
+      "A": "5.01",
+      "B": "5.25",
+      "C": "5.5",
+      "D": "5.75"
+    },
+    "correct_answer": "B",
+    "explanation": "101.01₂ = 4+0+1+0+0.25 = 5.25። ከነጥቡ በኋላ ያሉ የቦታ ኃይሎች አሉታዊ ናቸው (2⁻¹፣ 2⁻²)።"
+  },
+  {
+    "id": 67,
+    "topic": "Decimal to Binary Conversion",
+    "question": "What is the binary equivalent of decimal 93?",
+    "options": {
+      "A": "1011011₂",
+      "B": "1011101₂",
+      "C": "1101101₂",
+      "D": "1110101₂"
+    },
+    "correct_answer": "B",
+    "explanation": "93₁₀ = 1011101₂። ማረጋገጫ፦ 64+16+8+4+1 = 93። 1 የሆኑትን ቦታዎች በመደመር ውጤቱን ማረጋገጥ ትችላለህ።"
+  },
+  {
+    "id": 68,
+    "topic": "Decimal to Octal Conversion",
+    "question": "What is the octal equivalent of decimal 93?",
+    "options": {
+      "A": "125₈",
+      "B": "135₈",
+      "C": "145₈",
+      "D": "153₈"
+    },
+    "correct_answer": "B",
+    "explanation": "93÷8 = 11 ቀሪ 5፤ 11÷8 = 1 ቀሪ 3፤ 1÷8 = 0 ቀሪ 1። ቀሪዎቹን ከመጨረሻ ወደ መጀመሪያ ስናነብ 135₈ ይሆናል።"
+  },
+  {
+    "id": 69,
+    "topic": "Decimal to Hexadecimal Conversion",
+    "question": "What is the hexadecimal equivalent of decimal 93?",
+    "options": {
+      "A": "4D₁₆",
+      "B": "5D₁₆",
+      "C": "6D₁₆",
+      "D": "5F₁₆"
+    },
+    "correct_answer": "B",
+    "explanation": "93÷16 = 5 ቀሪ 13። በhexadecimal 13 ማለት D ነው፤ ስለዚህ 93₁₀ = 5D₁₆። ቀሪ 13ን በፊደል መግለጽ እንዳትረሳ!"
+  },
+  {
+    "id": 70,
+    "topic": "Decimal Fraction to Binary",
+    "question": "What is the binary equivalent of decimal 0.125?",
+    "options": {
+      "A": "0.010₂",
+      "B": "0.011₂",
+      "C": "0.001₂",
+      "D": "0.101₂"
+    },
+    "correct_answer": "C",
+    "explanation": "0.125×2 = 0.25፤ 0.25×2 = 0.5፤ 0.5×2 = 1.0። የኢንቲጀር ክፍሎቹን ከመጀመሪያ ጀምረን ስናነብ 0.001₂ እናገኛለን።"
+  },
+  {
+    "id": 71,
+    "topic": "Decimal to Other Bases",
+    "question": "When converting the integer part of a decimal number to another base, how should the remainders be read?",
+    "options": {
+      "A": "From the first division to the last division",
+      "B": "From the last division to the first division",
+      "C": "In alphabetical order",
+      "D": "Only the largest remainder is used"
+    },
+    "correct_answer": "B",
+    "explanation": "ትክክል! ቀሪዎቹን ከመጨረሻው ክፍፍል ወደ መጀመሪያው እናነባለን። በተቃራኒው ካነበብክ የተሳሳተ ቁጥር ታገኛለህ!"
+  },
+  {
+    "id": 72,
+    "topic": "Decimal to Other Bases",
+    "question": "When converting a decimal fraction to another base using repeated multiplication, which part is recorded at each step?",
+    "options": {
+      "A": "The integer part of the product",
+      "B": "Only the decimal point",
+      "C": "The original base only",
+      "D": "The previous remainder from integer division"
+    },
+    "correct_answer": "A",
+    "explanation": "ክፍሉን በአዲሱ መሠረት እናባዛለን። በእያንዳንዱ ደረጃ የውጤቱን ኢንቲጀር ክፍል እንመዘግባለን፤ የቀረውን ክፍል ለቀጣዩ ማባዛት እንጠቀማለን።"
+  },
+  {
+    "id": 73,
+    "topic": "Converting Between Non-Decimal Bases",
+    "question": "What is the first step when converting a number from one non-decimal base to another non-decimal base using the lecture's method?",
+    "options": {
+      "A": "Convert the original number to decimal",
+      "B": "Convert the number directly to hexadecimal every time",
+      "C": "Remove all zero digits",
+      "D": "Multiply the original number by zero"
+    },
+    "correct_answer": "A",
+    "explanation": "ዘዴው ሁለት ደረጃዎች አሉት። መጀመሪያ ቁጥሩን ወደ decimal እንቀይራለን፤ ከዚያ decimalን ወደሚፈለገው መሠረት እንቀይራለን።"
+  },
+  {
+    "id": 74,
+    "topic": "Base Conversion",
+    "question": "Using the method in the lecture, what is the base-4 equivalent of 545₆?",
+    "options": {
+      "A": "3011₄",
+      "B": "3101₄",
+      "C": "3201₄",
+      "D": "3210₄"
+    },
+    "correct_answer": "B",
+    "explanation": "545₆ = 180+24+5 = 209₁₀። 209ን በ4 በተከታታይ ስናካፍል ቀሪዎቹን ከመጨረሻ ወደ መጀመሪያ ስናነብ 3101₄ እናገኛለን።"
+  },
+  {
+    "id": 75,
+    "topic": "Number Systems",
+    "question": "How many binary bits are sufficient to represent one octal digit?",
+    "options": {
+      "A": "1 bit",
+      "B": "2 bits",
+      "C": "3 bits",
+      "D": "4 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Octal 8 የተለያዩ አሃዞች አሉት፤ 2³ = 8 ስለሆነ 3 ቢቶች አንድ octal አሃዝን ለመወከል በቂ ናቸው።"
+  },
+  {
+    "id": 76,
+    "topic": "Number Systems",
+    "question": "How many binary bits are sufficient to represent one hexadecimal digit?",
+    "options": {
+      "A": "2 bits",
+      "B": "3 bits",
+      "C": "4 bits",
+      "D": "8 bits"
+    },
+    "correct_answer": "C",
+    "explanation": "Hexadecimal 16 የተለያዩ አሃዞች አሉት፤ 2⁴ = 16 ስለሆነ 4 ቢቶች በቂ ናቸው። ይህ በbinary እና hexadecimal መካከል ለመቀየር ይጠቅማል።"
+  },
+  {
+    "id": 77,
+    "topic": "Number Systems",
+    "question": "What is the largest single digit in the octal number system?",
+    "options": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "9"
+    },
+    "correct_answer": "B",
+    "explanation": "Octal መሠረቱ 8 ስለሆነ ከ0 እስከ 7 ያሉ አሃዞችን ብቻ ይጠቀማል። ትልቁ አሃዝ 7 ነው፤ 8 በoctal አይፈቀድም!"
+  },
+  {
+    "id": 78,
+    "topic": "Number Systems",
+    "question": "What is the largest single digit in the hexadecimal number system?",
+    "options": {
+      "A": "9",
+      "B": "E",
+      "C": "F",
+      "D": "G"
+    },
+    "correct_answer": "C",
+    "explanation": "Hexadecimal ውስጥ ትልቁ አሃዝ F ነው፤ የdecimal ዋጋው 15 ነው። G በhexadecimal አሃዞች ውስጥ አይካተትም።"
+  },
+  {
+    "id": 79,
+    "topic": "Number Systems",
+    "question": "Which statement about the binary number 1021₂ is correct?",
+    "options": {
+      "A": "It is a valid binary number",
+      "B": "It is invalid because binary permits only 0 and 1",
+      "C": "It is an octal number",
+      "D": "It is a hexadecimal number"
+    },
+    "correct_answer": "B",
+    "explanation": "Binary ውስጥ 0 እና 1 ብቻ ይፈቀዳሉ። 1021₂ ውስጥ 2 ስላለ ትክክለኛ binary አይደለም። መሠረቱን ሳትመለከት አትመልስ!"
+  },
+  {
+    "id": 80,
+    "topic": "Review and Exam Practice",
+    "question": "Which statement correctly distinguishes Address Bus, Data Bus, and Control Bus?",
+    "options": {
+      "A": "Address selects a location, Data transfers information, and Control carries coordinating signals",
+      "B": "Address transfers information, Data selects locations, and Control stores files",
+      "C": "All three buses perform exactly the same function",
+      "D": "Address stores programs, Data prints results, and Control is a monitor"
+    },
+    "correct_answer": "A",
+    "explanation": "ዋና ማጠቃለያ፦ Address Bus ቦታን ይመርጣል፤ Data Bus መረጃን ያጓጉዛል፤ Control Bus የቁጥጥር ምልክቶችን ያስተላልፋል።"
+  }
+]
