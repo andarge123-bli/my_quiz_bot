@@ -1,0 +1,1917 @@
+{
+  "title": "8086/8088 Chapter 2 MCQ Question Bank",
+  "source_file": "Chapter_2_Internal_architecture_of_the_80868088_microprocessors(2).pptx",
+  "total_questions": 127,
+  "notes": [
+    "Questions marked source_status='lecture' are based on the uploaded PPT.",
+    "Segment-override questions are supplementary because the PPT does not explicitly teach segment-override syntax.",
+    "This question bank covers major concepts from the PPT; it cannot guarantee every possible exam question."
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "When was the Intel 8086 introduced?",
+      "options": {
+        "A": "March 1978",
+        "B": "March 1988",
+        "C": "January 1975",
+        "D": "December 1986"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! 8086 በመጋቢት 1978 ተዋወቀ። ይህን አስታውስ፤ የታሪክ ጥያቄ ነው እንጂ የhex ውጊያ አይደለም!",
+      "explanation_en": "Correct answer: March 1978. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 2,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "Why is the 8086 called a 16-bit processor?",
+      "options": {
+        "A": "It has 16 pins",
+        "B": "Its ALU, registers, and most instructions work with 16-bit words",
+        "C": "It has a 16-bit address bus",
+        "D": "It addresses only 16 locations"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ጎበዝ! 16-bit ማለት ALUው፣ ውስጣዊ ሬጂስተሮቹና አብዛኞቹ መመሪያዎቹ 16-bit ቃላትን ለመስራት ተዘጋጅተዋል ማለት ነው። ፒን ቆጥረህ አትወስን!",
+      "explanation_en": "Correct answer: Its ALU, registers, and most instructions work with 16-bit words. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 3,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "How wide is the 8086 address bus?",
+      "options": {
+        "A": "8 bits",
+        "B": "16 bits",
+        "C": "20 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! 8086 20-bit address bus አለው። 16-bit የdata/register ስፋትን ከ20-bit address bus ጋር አትደባልቅ!",
+      "explanation_en": "Correct answer: 20 bits. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 4,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "What is the maximum memory capacity of the 8086?",
+      "options": {
+        "A": "64 KB",
+        "B": "256 KB",
+        "C": "512 KB",
+        "D": "1 MB"
+      },
+      "correct_answer": "D",
+      "explanation_am": "ጀግና! 2²⁰ = 1,048,576 byte አድራሻዎች ናቸው፤ ይህም በስላይዱ 1 MB ተብሏል።",
+      "explanation_en": "Correct answer: 1 MB. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 5,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "What is the 8086 external data-bus width?",
+      "options": {
+        "A": "8 bits",
+        "B": "16 bits",
+        "C": "20 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 8086 16-bit external data bus አለው፤ 20-bit ግን address bus ነው።",
+      "explanation_en": "Correct answer: 16 bits. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 6,
+      "topic": "8088 features",
+      "source_status": "lecture",
+      "question": "What is the 8088 external data-bus width?",
+      "options": {
+        "A": "8 bits",
+        "B": "16 bits",
+        "C": "20 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! 8088 8-bit external data bus አለው። ውስጣዊ አርክቴክቸሩ 16-bit ቢሆንም የውጭ ዳታ መንገዱ 8-bit ነው።",
+      "explanation_en": "Correct answer: 8 bits. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 7,
+      "topic": "8086/8088 comparison",
+      "source_status": "lecture",
+      "question": "How many instruction bytes can the 8086 queue hold?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! 8086 6-byte queue አለው፤ 8088 ደግሞ 4-byte ነው። ቁጥሩን አትቀያይር!",
+      "explanation_en": "Correct answer: 6. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 8,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "Which mode supports multiprocessor or coprocessor configurations?",
+      "options": {
+        "A": "Minimum mode",
+        "B": "Maximum mode",
+        "C": "Sleep mode",
+        "D": "Single-byte mode"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በስላይዱ መሠረት Maximum mode ለmultiprocessor/coprocessor ውቅር ይጠቅማል።",
+      "explanation_en": "Correct answer: Maximum mode. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 9,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "What is the unsigned range of an 8-bit byte?",
+      "options": {
+        "A": "−128 to +127",
+        "B": "0 to 255",
+        "C": "0 to 65535",
+        "D": "−32768 to +32767"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 8-bit unsigned ከ0 እስከ 255 ነው። አሉታዊ ቁጥሮች በsigned ክልል ውስጥ ይመጣሉ።",
+      "explanation_en": "Correct answer: 0 to 255. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 10,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "What is the signed range of an 8-bit integer?",
+      "options": {
+        "A": "0 to 255",
+        "B": "−128 to +127",
+        "C": "0 to 65535",
+        "D": "−255 to +255"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ጎበዝ! 8-bit signed ክልል −128 እስከ +127 ነው። ይህን ከunsigned ክልል ጋር አትደባልቅ!",
+      "explanation_en": "Correct answer: −128 to +127. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 11,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "What is the unsigned range of a 16-bit word?",
+      "options": {
+        "A": "0 to 255",
+        "B": "0 to 65535",
+        "C": "−32768 to +32767",
+        "D": "−65535 to +65535"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 16-bit unsigned ከ0 እስከ 65,535 ይሄዳል። 2¹⁶ እሴቶች አሉ፤ ዜሮንም ቆጥር!",
+      "explanation_en": "Correct answer: 0 to 65535. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 12,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "What is the signed range of a 16-bit word?",
+      "options": {
+        "A": "−128 to +127",
+        "B": "0 to 65535",
+        "C": "−32768 to +32767",
+        "D": "−65536 to +65535"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! 16-bit signed ከ−32,768 እስከ +32,767 ነው። ዜሮም አንድ እሴት እንደሚይዝ አስታውስ!",
+      "explanation_en": "Correct answer: −32768 to +32767. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 13,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "How are negative signed numbers represented in the lecture?",
+      "options": {
+        "A": "One's complement only",
+        "B": "Two's complement",
+        "C": "ASCII only",
+        "D": "Packed BCD only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በስላይዱ መሠረት አሉታዊ signed ቁጥሮች two’s complement ይጠቀማሉ።",
+      "explanation_en": "Correct answer: Two's complement. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 14,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "How many decimal digits fit in one packed BCD byte?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Four",
+        "D": "Eight"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! Packed BCD አንድ byte ውስጥ ሁለት የዲሲማል አሃዞችን ይይዛል፤ እያንዳንዱ 4 bit ይወስዳል።",
+      "explanation_en": "Correct answer: Two. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 15,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "How much space does one unpacked BCD digit use?",
+      "options": {
+        "A": "One bit",
+        "B": "Four bits",
+        "C": "One byte",
+        "D": "Two bytes"
+      },
+      "correct_answer": "C",
+      "explanation_am": "አዎ! Unpacked BCD አንድ አሃዝን በአንድ byte ያስቀምጣል፤ የላይኛው 4 bit በስላይዱ አይጠቀሙም ተብሏል።",
+      "explanation_en": "Correct answer: One byte. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 16,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "What is the valid BCD code range for one decimal digit?",
+      "options": {
+        "A": "0000₂–1001₂",
+        "B": "0000₂–1111₂",
+        "C": "0001₂–1010₂",
+        "D": "0010₂–1111₂"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! BCD አንድ አሃዝ 0–9 ነው፤ 0000₂ እስከ 1001₂። 1010₂ ከመጣ የዲሲማል አሃዝ አይደለም!",
+      "explanation_en": "Correct answer: 0000₂–1001₂. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 17,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "How many code combinations can 7-bit ASCII represent?",
+      "options": {
+        "A": "7",
+        "B": "64",
+        "C": "128",
+        "D": "256"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! 2⁷ = 128 የተለያዩ ኮዶች ናቸው። 7 bit ማለት 7 ቁምፊ ብቻ ማለት አይደለም!",
+      "explanation_en": "Correct answer: 128. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 18,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "According to the slide, what is the byte representation of ASCII 'A'?",
+      "options": {
+        "A": "01000001",
+        "B": "00110101",
+        "C": "10000001",
+        "D": "01000010"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ጀግና! ስላይዱ 'A'ን በ7-bit 1000001 እና በbyte 01000001 እንደሚቀመጥ ያሳያል።",
+      "explanation_en": "Correct answer: 01000001. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 19,
+      "topic": "Architecture",
+      "source_status": "lecture",
+      "question": "Which two major units form the 8086 architecture?",
+      "options": {
+        "A": "ALU and RAM",
+        "B": "BIU and EU",
+        "C": "CS and DS",
+        "D": "SP and BP"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 8086 በBIU (Bus Interface Unit) እና EU (Execution Unit) ይከፈላል። አንዱ ከውጭ ይገናኛል፣ ሌላው ያስኬዳል!",
+      "explanation_en": "Correct answer: BIU and EU. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 20,
+      "topic": "Architecture",
+      "source_status": "lecture",
+      "question": "Which unit handles external bus operations and instruction fetching?",
+      "options": {
+        "A": "EU",
+        "B": "BIU",
+        "C": "Flag register",
+        "D": "ALU only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BIU አድራሻ ያዘጋጃል፣ መመሪያ ያመጣል፣ ከmemory/port ያነባል እና ይጽፋል።",
+      "explanation_en": "Correct answer: BIU. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 21,
+      "topic": "Architecture",
+      "source_status": "lecture",
+      "question": "Which unit decodes and executes instructions?",
+      "options": {
+        "A": "BIU",
+        "B": "EU",
+        "C": "Address bus",
+        "D": "Instruction queue"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ጎበዝ! EU መመሪያዎችን ይፈታል እና ያስኬዳል፤ BIU ደግሞ ያመጣቸዋል።",
+      "explanation_en": "Correct answer: EU. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 22,
+      "topic": "Architecture",
+      "source_status": "lecture",
+      "question": "What is pipelining in the 8086?",
+      "options": {
+        "A": "Executing every instruction twice",
+        "B": "Fetching the next instruction while the current one executes",
+        "C": "Storing all data in stack",
+        "D": "Converting addresses to ASCII"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BIU ቀጣዩን መመሪያ ሲያመጣ EU ያለውን ሲያስኬድ ሁለቱ ስራዎች ይደራረባሉ። የስራ ክፍፍል ነው!",
+      "explanation_en": "Correct answer: Fetching the next instruction while the current one executes. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 23,
+      "topic": "Architecture",
+      "source_status": "lecture",
+      "question": "What principle does the instruction queue use?",
+      "options": {
+        "A": "LIFO",
+        "B": "FIFO",
+        "C": "Random order",
+        "D": "Alphabetical order"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! FIFO = First In, First Out። ወረፋ ላይ መጀመሪያ የገባው መጀመሪያ ይወጣል!",
+      "explanation_en": "Correct answer: FIFO. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 24,
+      "topic": "Architecture",
+      "source_status": "lecture",
+      "question": "Which register holds the offset of the next instruction in the current code segment?",
+      "options": {
+        "A": "SP",
+        "B": "IP",
+        "C": "DI",
+        "D": "DX"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! IP በCS ውስጥ የሚገኘውን ቀጣይ መመሪያ offset ይይዛል። CS ክፍሉን፣ IP ቦታውን ያሳያል!",
+      "explanation_en": "Correct answer: IP. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 25,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "What is the maximum size of one 8086 segment?",
+      "options": {
+        "A": "1 KB",
+        "B": "16 KB",
+        "C": "64 KB",
+        "D": "1 MB"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! አንድ segment ከፍተኛው 64 KB ነው። 1 MB የሙሉ አድራሻ ቦታ ነው፤ አትደባልቅ!",
+      "explanation_en": "Correct answer: 64 KB. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 26,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "How wide are CS, DS, SS, and ES?",
+      "options": {
+        "A": "8 bits",
+        "B": "16 bits",
+        "C": "20 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! አራቱም segment registers 16-bit ናቸው። ከoffset ጋር ሲደመሩ 20-bit physical address ይፈጥራሉ።",
+      "explanation_en": "Correct answer: 16 bits. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 27,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Which segment register identifies the code segment?",
+      "options": {
+        "A": "DS",
+        "B": "ES",
+        "C": "SS",
+        "D": "CS"
+      },
+      "correct_answer": "D",
+      "explanation_am": "ኧረ ይህን አትርሳ! Code ከሆነ CS ነው። ስሙ ራሱ Code Segment እያለ እየጠራ ነው!",
+      "explanation_en": "Correct answer: CS. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 28,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Which segment register is associated with the stack?",
+      "options": {
+        "A": "CS",
+        "B": "DS",
+        "C": "SS",
+        "D": "ES"
+      },
+      "correct_answer": "C",
+      "explanation_am": "Stack ከሆነ SS ነዋ! CS ካልክ ስላይዱን እንደ ዘፈን ሳታዳምጥ ነው የመጣኸው?",
+      "explanation_en": "Correct answer: SS. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 29,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Which segment register is normally used for general data?",
+      "options": {
+        "A": "DS",
+        "B": "CS",
+        "C": "SS",
+        "D": "IP"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! DS የData Segment መሠረትን ይይዛል። Data እና DS ሁለቱም D ይጀምራሉ፤ ይህን ፍንጭ ተጠቀም!",
+      "explanation_en": "Correct answer: DS. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 30,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Which register is used for the extra segment and string destination convention?",
+      "options": {
+        "A": "CS",
+        "B": "SS",
+        "C": "ES",
+        "D": "DS"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! ES የExtra Segment ሬጂስተር ነው፤ በstring destination ላይ DI ከES ጋር ይጣመራል።",
+      "explanation_en": "Correct answer: ES. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 31,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "What is the 8086 real-mode physical-address formula?",
+      "options": {
+        "A": "Segment + Offset × 10H",
+        "B": "Segment × 10H + Offset",
+        "C": "Segment × Offset",
+        "D": "Segment + Offset"
+      },
+      "correct_answer": "B",
+      "explanation_am": "የወርቅ ፎርሙላ! Physical Address = (Segment × 10H) + Offset። Segmentን አንድ hex ቦታ ወደ ግራ አንቀሳቅስ፣ offsetን ጨምር።",
+      "explanation_en": "Correct answer: Segment × 10H + Offset. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 32,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "If DS=2222H, what is the segment base physical address?",
+      "options": {
+        "A": "2222H",
+        "B": "02222H",
+        "C": "22220H",
+        "D": "2222FH"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ጀግና! 2222H × 10H = 22220H። Segmentን አንድ hexadecimal ቦታ ወደ ግራ አንቀሳቅስ!",
+      "explanation_en": "Correct answer: 22220H. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 33,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "If CS=456AH and IP=1620H, what is the physical address?",
+      "options": {
+        "A": "456A0H",
+        "B": "46CC0H",
+        "C": "472C0H",
+        "D": "1620H"
+      },
+      "correct_answer": "B",
+      "explanation_am": "በደረጃ፦ 456AH × 10H = 456A0H፤ 456A0H + 1620H = 46CC0H። የhex ድምርን አትቸኩል!",
+      "explanation_en": "Correct answer: 46CC0H. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 34,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Calculate the physical address for segment 1005H and offset 5555H.",
+      "options": {
+        "A": "10055H",
+        "B": "155A5H",
+        "C": "6555H",
+        "D": "15550H"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክለኛው ስሌት፦ 1005H × 10H = 10050H፤ 10050H + 5555H = 155A5H። ጀግና ከሆንክ ይህን በራስህ አስላ!",
+      "explanation_en": "Correct answer: 155A5H. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 35,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "What does a physical address represent?",
+      "options": {
+        "A": "The offset only",
+        "B": "The actual byte address sent on the address bus",
+        "C": "The segment-register number",
+        "D": "The instruction length"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! Physical address በmemory ውስጥ ያለውን ትክክለኛ byte የሚያመለክት እና ወደ address bus የሚወጣ አድራሻ ነው።",
+      "explanation_en": "Correct answer: The actual byte address sent on the address bus. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 36,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Which pair identifies the next instruction address?",
+      "options": {
+        "A": "DS:BX",
+        "B": "SS:SP",
+        "C": "CS:IP",
+        "D": "ES:DI"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! መመሪያ አድራሻ = CS:IP። CS code segmentን፣ IP በዚያ ውስጥ ያለውን offset ይይዛል።",
+      "explanation_en": "Correct answer: CS:IP. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 37,
+      "topic": "Segmentation",
+      "source_status": "lecture",
+      "question": "Which pair is the default stack-address combination?",
+      "options": {
+        "A": "CS:IP",
+        "B": "SS:SP or SS:BP",
+        "C": "DS:SI only",
+        "D": "ES:DI only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "Stack ከሆነ SS:SP ወይም SS:BP ነው። SSን ከDS ጋር አትቀያይር!",
+      "explanation_en": "Correct answer: SS:SP or SS:BP. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 38,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "In register-indirect addressing, where is the memory offset held?",
+      "options": {
+        "A": "Only in the opcode",
+        "B": "In a register such as BX, BP, SI, or DI",
+        "C": "Only in the carry flag",
+        "D": "In the instruction queue"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ሬጂስተሩ የmemory አድራሻ offsetን ይይዛል፤ ውሂቡ ግን memory ውስጥ ነው።",
+      "explanation_en": "Correct answer: In a register such as BX, BP, SI, or DI. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 39,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "What does MOV [BX], AX do?",
+      "options": {
+        "A": "Copies memory into AX",
+        "B": "Stores AX in the memory location addressed by BX",
+        "C": "Loads BX with AX's address",
+        "D": "Copies CS into BX"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! MOV [BX], AX ማለት AX ውስጥ ያለውን ወደ BX በሚያመለክተው memory ቦታ ማስቀመጥ ነው። [] የmemory operand ፍንጭ ነው!",
+      "explanation_en": "Correct answer: Stores AX in the memory location addressed by BX. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 40,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "Which register is commonly used to access stack data and defaults to SS?",
+      "options": {
+        "A": "SI",
+        "B": "DI",
+        "C": "BP",
+        "D": "CX"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! BP በstack ያለ ዳታን ለመድረስ ይጠቅማል እና በመደበኛነት SS ይጠቀማል።",
+      "explanation_en": "Correct answer: BP. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 41,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "In string operations, which pair is normally used for the source?",
+      "options": {
+        "A": "ES:DI",
+        "B": "DS:SI",
+        "C": "SS:BP",
+        "D": "CS:IP"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! SI ከDS ጋር ለsource ይሰራል። SI = Source Index፤ ስሙን አስታውስ!",
+      "explanation_en": "Correct answer: DS:SI. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 42,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "In string operations, which pair is normally used for the destination?",
+      "options": {
+        "A": "DS:SI",
+        "B": "SS:SP",
+        "C": "ES:DI",
+        "D": "CS:IP"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ጎበዝ! DI ከES ጋር ለdestination ይሰራል። DS:SI ምንጭ፣ ES:DI መድረሻ ብለህ አስታውስ!",
+      "explanation_en": "Correct answer: ES:DI. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 43,
+      "topic": "Segment overrides",
+      "source_status": "supplementary_not_explicitly_explained_in_slides",
+      "question": "What does a segment-override prefix do?",
+      "options": {
+        "A": "Changes the default segment used for a memory operand",
+        "B": "Changes the CPU to 8-bit",
+        "C": "Clears all flags",
+        "D": "Replaces the opcode with an offset"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ተጨማሪ እውቀት፦ ይህ ጽንሰ-ሀሳብ በPPT በግልጽ አልተብራራም። Segment override ለmemory operand የሚጠቀመውን default segment register ይቀይራል።",
+      "explanation_en": "Correct answer: Changes the default segment used for a memory operand. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 44,
+      "topic": "Segment overrides",
+      "source_status": "supplementary_not_explicitly_explained_in_slides",
+      "question": "Which instruction explicitly selects ES for the memory operand at BX?",
+      "options": {
+        "A": "MOV AX, [BX]",
+        "B": "MOV AX, ES:[BX]",
+        "C": "MOV ES, [IP]",
+        "D": "MOV AX, CS"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ES:[BX] በግልጽ ESን ይመርጣል። ማስታወሻ፦ ይህ የsegment-override ተጨማሪ ምሳሌ ነው፣ በስላይዱ በቀጥታ አልተብራራም።",
+      "explanation_en": "Correct answer: MOV AX, ES:[BX]. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 45,
+      "topic": "Registers",
+      "source_status": "lecture",
+      "question": "Which four are the general-purpose data registers?",
+      "options": {
+        "A": "CS, DS, SS, ES",
+        "B": "AX, BX, CX, DX",
+        "C": "SP, BP, SI, DI",
+        "D": "IP, CF, ZF, OF"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! AX, BX, CX, DX አራቱ general-purpose registers ናቸው። Segment registersን ከእነዚህ ጋር አትደባልቅ!",
+      "explanation_en": "Correct answer: AX, BX, CX, DX. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 46,
+      "topic": "Registers",
+      "source_status": "lecture",
+      "question": "If AX=1234H, what are AH and AL?",
+      "options": {
+        "A": "AH=34H, AL=12H",
+        "B": "AH=12H, AL=34H",
+        "C": "AH=12H, AL=12H",
+        "D": "AH=34H, AL=34H"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ጀግና! AH ከፍተኛው byte 12H ነው፤ AL ዝቅተኛው byte 34H ነው። H=High፣ L=Low!",
+      "explanation_en": "Correct answer: AH=12H, AL=34H. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 47,
+      "topic": "Registers",
+      "source_status": "lecture",
+      "question": "Which register is called the accumulator?",
+      "options": {
+        "A": "AX",
+        "B": "BX",
+        "C": "CX",
+        "D": "DX"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! AX የaccumulator ሬጂስተር ነው፤ MUL እና DIV ያሉ አንዳንድ መመሪያዎች ይጠቀሙበታል።",
+      "explanation_en": "Correct answer: AX. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 48,
+      "topic": "Registers",
+      "source_status": "lecture",
+      "question": "Which register is used for loop counting and many repeated instructions?",
+      "options": {
+        "A": "AX",
+        "B": "BX",
+        "C": "CX",
+        "D": "ES"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! CX የcount register ነው፤ LOOP እና REP ያሉ መመሪያዎች ይጠቀሙበታል።",
+      "explanation_en": "Correct answer: CX. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 49,
+      "topic": "Registers",
+      "source_status": "lecture",
+      "question": "Which register can hold an I/O port number and works with AX in word MUL/DIV?",
+      "options": {
+        "A": "DX",
+        "B": "SI",
+        "C": "BP",
+        "D": "CS"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! DX የport ቁጥርን ሊይዝ ይችላል፣ በword-size MUL/DIV ከAX ጋርም ይሰራል።",
+      "explanation_en": "Correct answer: DX. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 50,
+      "topic": "Pointer/index registers",
+      "source_status": "lecture",
+      "question": "Which pair contains the pointer registers?",
+      "options": {
+        "A": "AX and BX",
+        "B": "SP and BP",
+        "C": "SI and DI",
+        "D": "CS and DS"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! SP እና BP pointer registers ናቸው። SI እና DI ግን index registers ናቸው።",
+      "explanation_en": "Correct answer: SP and BP. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 51,
+      "topic": "Pointer/index registers",
+      "source_status": "lecture",
+      "question": "Which pair contains the index registers?",
+      "options": {
+        "A": "SP and BP",
+        "B": "SI and DI",
+        "C": "AX and CX",
+        "D": "CS and IP"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ጎበዝ! SI = Source Index፣ DI = Destination Index። ስማቸው ምንጭና መድረሻ ያስታውሳል!",
+      "explanation_en": "Correct answer: SI and DI. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 52,
+      "topic": "Pointer/index registers",
+      "source_status": "lecture",
+      "question": "What does SP point to?",
+      "options": {
+        "A": "The next instruction",
+        "B": "The top of the stack",
+        "C": "The start of code segment",
+        "D": "The carry flag"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! SP የstack ከላይኛው ንጥል offsetን ይጠቁማል። Stack LIFO ነው!",
+      "explanation_en": "Correct answer: The top of the stack. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 53,
+      "topic": "EU/ALU",
+      "source_status": "lecture",
+      "question": "What is the ALU's main job?",
+      "options": {
+        "A": "Store instruction bytes only",
+        "B": "Perform arithmetic and logical operations",
+        "C": "Hold the code segment base only",
+        "D": "Manage the stack only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ALU መደመር፣ መቀነስ፣ AND፣ OR፣ XOR፣ shift እና ሌሎች ስራዎችን ያከናውናል።",
+      "explanation_en": "Correct answer: Perform arithmetic and logical operations. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 54,
+      "topic": "EU/ALU",
+      "source_status": "lecture",
+      "question": "What does the instruction decoder do?",
+      "options": {
+        "A": "Translates instructions into actions",
+        "B": "Stores all addresses permanently",
+        "C": "Adds segment and offset only",
+        "D": "Pushes values onto the stack"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! Decoder መመሪያዎችን ይተረጉማል እና CPU ምን እንደሚያደርግ ይወስናል።",
+      "explanation_en": "Correct answer: Translates instructions into actions. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 55,
+      "topic": "Rotate instructions",
+      "source_status": "lecture",
+      "question": "What is the key difference between RCL and ROL?",
+      "options": {
+        "A": "RCL rotates through CF; ROL does not use the old CF as input",
+        "B": "RCL rotates right; ROL rotates right",
+        "C": "RCL is for addresses only",
+        "D": "They are identical"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! RCL በCarry Flag በኩል ያዞራል፤ ROL ግን የቀድሞ CFን input አድርጎ አይጠቀምም።",
+      "explanation_en": "Correct answer: RCL rotates through CF; ROL does not use the old CF as input. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 56,
+      "topic": "Rotate instructions",
+      "source_status": "lecture",
+      "question": "In ROR, where does the outgoing least-significant bit go?",
+      "options": {
+        "A": "It is discarded",
+        "B": "It wraps to the most-significant bit and is copied to CF",
+        "C": "It always becomes zero",
+        "D": "It moves to the sign flag only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ROR የወጣውን የቀኝ ጫፍ bit ወደ ግራ ጫፍ ያመጣል እና CF ውስጥም ይቀዳል።",
+      "explanation_en": "Correct answer: It wraps to the most-significant bit and is copied to CF. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 57,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "How wide is the 8086 flag register?",
+      "options": {
+        "A": "8 bits",
+        "B": "9 bits",
+        "C": "16 bits",
+        "D": "20 bits"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! Flag register 16-bit ነው፤ በስላይዱ መሠረት 9 individual flag bits ተጠቅሰዋል።",
+      "explanation_en": "Correct answer: 16 bits. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 58,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "Which set contains only status flags?",
+      "options": {
+        "A": "TF, IF, DF",
+        "B": "CF, PF, AF, ZF, SF, OF",
+        "C": "CS, DS, SS, ES",
+        "D": "AX, BX, CX, DX"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ጎበዝ! CF, PF, AF, ZF, SF, OF ስድስቱ status flags ናቸው። TF, IF, DF ግን control flags ናቸው።",
+      "explanation_en": "Correct answer: CF, PF, AF, ZF, SF, OF. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 59,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "Which set contains the three control flags?",
+      "options": {
+        "A": "CF, PF, AF",
+        "B": "ZF, SF, OF",
+        "C": "TF, IF, DF",
+        "D": "CS, IP, SS"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! TF, IF, DF control flags ናቸው፤ CPU ባህሪን ይቆጣጠራሉ።",
+      "explanation_en": "Correct answer: TF, IF, DF. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 60,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "When is Carry Flag set?",
+      "options": {
+        "A": "When the result is zero",
+        "B": "When unsigned arithmetic carries/borrows beyond the destination range",
+        "C": "When a signed result is negative",
+        "D": "Whenever an instruction is fetched"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! CF በunsigned arithmetic ውስጥ carry/borrow ሲኖር ይነሳል። ከsigned overflow ጋር አትደባልቅ!",
+      "explanation_en": "Correct answer: When unsigned arithmetic carries/borrows beyond the destination range. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 61,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "What does Overflow Flag indicate?",
+      "options": {
+        "A": "Signed result does not fit the destination range",
+        "B": "Result is always zero",
+        "C": "Stack is empty",
+        "D": "Segment is 64 KB"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! OF በsigned arithmetic ውጤቱ ከሚፈቀደው ክልል ሲወጣ ይነሳል። CF እና OF የተለያዩ ናቸው!",
+      "explanation_en": "Correct answer: Signed result does not fit the destination range. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 62,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "When is Zero Flag set?",
+      "options": {
+        "A": "When the result is zero",
+        "B": "When result is negative",
+        "C": "When a segment shifts",
+        "D": "When queue is full"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! ZF=1 ማለት ውጤቱ ዜሮ ነው። ዜሮ ካልሆነ ZF=0!",
+      "explanation_en": "Correct answer: When the result is zero. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 63,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "What does the Parity Flag reflect?",
+      "options": {
+        "A": "Even or odd number of 1 bits in the result",
+        "B": "Segment size",
+        "C": "Stack fullness",
+        "D": "Address-bus width"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! PF=1 ሲሆን በውጤቱ ያሉ 1 bits ብዛት እኩል ነው፤ ጎዶሎ ከሆነ PF=0።",
+      "explanation_en": "Correct answer: Even or odd number of 1 bits in the result. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 64,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "What does DF=1 do to string-operation direction?",
+      "options": {
+        "A": "Automatically increments",
+        "B": "Automatically decrements",
+        "C": "Disables interrupts",
+        "D": "Clears CF"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! DF=1 ሲሆን string operations ይቀንሳሉ፤ DF=0 ሲሆን ይጨምራሉ። STD ያበራዋል፣ CLD ያጠፋዋል!",
+      "explanation_en": "Correct answer: Automatically decrements. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 65,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "Which instructions clear and set IF, respectively?",
+      "options": {
+        "A": "STD and CLD",
+        "B": "CLI and STI",
+        "C": "RCL and RCR",
+        "D": "PUSH and POP"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! CLI የInterrupt Flagን ያጠፋል፤ STI ያበራል። STD/CLD ግን Direction Flag ላይ ይሰራሉ!",
+      "explanation_en": "Correct answer: CLI and STI. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 66,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "What principle does a stack follow?",
+      "options": {
+        "A": "FIFO",
+        "B": "LIFO",
+        "C": "Random order",
+        "D": "Alphabetical order"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! Stack LIFO ነው፤ Last In, First Out። እንደ ሳህን ክምር፣ መጨረሻ ያስቀመጥከው መጀመሪያ ይወጣል!",
+      "explanation_en": "Correct answer: LIFO. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 67,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "Which operation inserts an element into a stack?",
+      "options": {
+        "A": "POP",
+        "B": "PUSH",
+        "C": "FETCH",
+        "D": "DECODE"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! PUSH ያስገባል፣ POP ያወጣል። ሁለቱን ካቀላቀልክ stackህ ይበሳጫል!",
+      "explanation_en": "Correct answer: PUSH. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 68,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "What happens if PUSH is attempted on a full stack?",
+      "options": {
+        "A": "Underflow",
+        "B": "Overflow",
+        "C": "It becomes FIFO",
+        "D": "TOP resets to −1"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ሙሉ stack ላይ PUSH ማድረግ overflow ያመጣል። ቦታ ከሌለ አታስገባ፤ እንደ ሚኒባስ አትጫነው!",
+      "explanation_en": "Correct answer: Overflow. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 69,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "What happens if POP is attempted on an empty stack?",
+      "options": {
+        "A": "Overflow",
+        "B": "Underflow",
+        "C": "Pipelining",
+        "D": "Carry"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ባዶ stack ላይ POP ሲደረግ underflow ነው። ከባዶ ሳህን ወጥ አታውጣ!",
+      "explanation_en": "Correct answer: Underflow. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 70,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "In the lecture's stack example, what does TOP = −1 mean?",
+      "options": {
+        "A": "The stack is full",
+        "B": "The stack is empty",
+        "C": "One item is present",
+        "D": "Overflow has occurred"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! TOP=−1 ማለት stack ባዶ ነው። አንድ ንጥል ሲገባ TOP=0 ይሆናል።",
+      "explanation_en": "Correct answer: The stack is empty. See the question topic and lecture notes for the relevant concept."
+    },
+    {
+      "id": 71,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "How many pins does the 8086 have, according to the lecture?",
+      "options": {
+        "A": "20",
+        "B": "32",
+        "C": "40",
+        "D": "64"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! በስላይዱ መሠረት 8086 40 pins አሉት። ፒኖቹን አትቆጥር ብለህ አትሸሽ!",
+      "explanation_en": "Correct answer: 40."
+    },
+    {
+      "id": 72,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "What operating frequency is listed for the 8086 in the lecture?",
+      "options": {
+        "A": "1 MHz",
+        "B": "5 MHz",
+        "C": "8 MHz",
+        "D": "20 MHz"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በዚህ ስላይድ 8086 የተጠቀሰው operating frequency 5 MHz ነው።",
+      "explanation_en": "Correct answer: 5 MHz."
+    },
+    {
+      "id": 73,
+      "topic": "8086 modes",
+      "source_status": "lecture",
+      "question": "What does the MN/MX pin determine?",
+      "options": {
+        "A": "The segment size",
+        "B": "Minimum or maximum mode",
+        "C": "The ALU result",
+        "D": "The stack direction"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! MN/MX ፒን የminimum ወይም maximum mode መሆኑን ይወስናል።",
+      "explanation_en": "Correct answer: Minimum or maximum mode."
+    },
+    {
+      "id": 74,
+      "topic": "8086 modes",
+      "source_status": "lecture",
+      "question": "According to the lecture, what happens when MN/MX is high?",
+      "options": {
+        "A": "Maximum mode",
+        "B": "Minimum mode",
+        "C": "8086 stops",
+        "D": "8086 becomes an 8088"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በስላይዱ መሠረት MN/MX ከፍተኛ (high) ሲሆን minimum mode ነው፤ low ሲሆን maximum mode ነው።",
+      "explanation_en": "Correct answer: Minimum mode."
+    },
+    {
+      "id": 75,
+      "topic": "8086/8088 comparison",
+      "source_status": "lecture",
+      "question": "Which statement about the 8086 and 8088 instruction sets is correct according to the lecture?",
+      "options": {
+        "A": "They have completely different instruction sets",
+        "B": "They have the same instruction set",
+        "C": "8088 has no ALU",
+        "D": "8086 has no registers"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በስላይዱ መሠረት 8086 እና 8088 ተመሳሳይ instruction set አላቸው። ዋናው ልዩነት የውጭ data bus ስፋት እና queue ነው።",
+      "explanation_en": "Correct answer: They have the same instruction set."
+    },
+    {
+      "id": 76,
+      "topic": "Memory organization",
+      "source_status": "lecture",
+      "question": "How is data stored in the 8086 memory system, according to the lecture?",
+      "options": {
+        "A": "Only in 16-bit words",
+        "B": "In bytes, with each byte having an address",
+        "C": "Only in segments with no byte addresses",
+        "D": "Only in registers"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ዳታ በbyte ይቀመጣል፣ እያንዳንዱ byteም የራሱ አድራሻ አለው። አንድ byte እንኳ አድራሻ ይፈልጋል!",
+      "explanation_en": "Correct answer: In bytes, with each byte having an address."
+    },
+    {
+      "id": 77,
+      "topic": "Memory organization",
+      "source_status": "lecture",
+      "question": "What is the lowest or starting address of a segment called?",
+      "options": {
+        "A": "Offset address",
+        "B": "Base address",
+        "C": "Queue address",
+        "D": "Flag address"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! Segment የሚጀምርበት አድራሻ Base Address ይባላል። Offset ደግሞ ከዚያ መጀመሪያ ያለውን ርቀት ይገልጻል።",
+      "explanation_en": "Correct answer: Base address."
+    },
+    {
+      "id": 78,
+      "topic": "Memory organization",
+      "source_status": "lecture",
+      "question": "What does an offset address measure?",
+      "options": {
+        "A": "The total RAM capacity",
+        "B": "The distance from the beginning of a segment to a location",
+        "C": "The number of segment registers",
+        "D": "The data-bus width"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! Offset ከsegment መጀመሪያ እስከ ተፈለገው ቦታ ያለው ርቀት ነው። ከመጀመሪያው የሚቆጠር ነው!",
+      "explanation_en": "Correct answer: The distance from the beginning of a segment to a location."
+    },
+    {
+      "id": 79,
+      "topic": "Memory organization",
+      "source_status": "lecture",
+      "question": "What is the range of a 16-bit segment address?",
+      "options": {
+        "A": "0000H–00FFH",
+        "B": "0000H–0FFFH",
+        "C": "0000H–FFFFH",
+        "D": "10000H–FFFFFH"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! 16-bit segment address ከ0000H እስከ FFFFH ይሄዳል። 16 bit = 4 hexadecimal digits!",
+      "explanation_en": "Correct answer: 0000H–FFFFH."
+    },
+    {
+      "id": 80,
+      "topic": "Memory organization",
+      "source_status": "lecture",
+      "question": "What is the range of a 16-bit offset?",
+      "options": {
+        "A": "0000H–00FFH",
+        "B": "0000H–FFFFH",
+        "C": "00000H–FFFFFH",
+        "D": "0000H–0FFFH"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! Offset 16-bit ስለሆነ ከ0000H እስከ FFFFH ነው። አንድ segment እስከ 64 KB ይደርሳል።",
+      "explanation_en": "Correct answer: 0000H–FFFFH."
+    },
+    {
+      "id": 81,
+      "topic": "Memory segmentation",
+      "source_status": "lecture",
+      "question": "If CS=1000H, at what physical address does the code segment begin?",
+      "options": {
+        "A": "01000H",
+        "B": "10000H",
+        "C": "1000FH",
+        "D": "11000H"
+      },
+      "correct_answer": "B",
+      "explanation_am": "እስቲ በቀላሉ፦ 1000H × 10H = 10000H። አንድ hex ዜሮ በቀኝ ጨምር፤ ይህ የsegment መነሻ ነው።",
+      "explanation_en": "Correct answer: 10000H."
+    },
+    {
+      "id": 82,
+      "topic": "Memory segmentation",
+      "source_status": "lecture",
+      "question": "How many hexadecimal digits are normally needed to write a 20-bit physical address?",
+      "options": {
+        "A": "Two",
+        "B": "Four",
+        "C": "Five",
+        "D": "Six"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! አንድ hexadecimal digit = 4 bit፤ 20 ÷ 4 = 5 digits። አምስት ቁምፊዎች ነው፣ ስድስት አይደለም!",
+      "explanation_en": "Correct answer: Five."
+    },
+    {
+      "id": 83,
+      "topic": "Memory segmentation",
+      "source_status": "lecture",
+      "question": "Calculate the physical address: 2222H:0010H.",
+      "options": {
+        "A": "22220H",
+        "B": "22230H",
+        "C": "22210H",
+        "D": "2222AH"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ደረጃው ይህ ነው፦ 2222H × 10H = 22220H፤ ከዚያ 0010H ጨምር = 22230H። የoffset ዜሮዎችን አትፍራ!",
+      "explanation_en": "Correct answer: 22230H."
+    },
+    {
+      "id": 84,
+      "topic": "Memory segmentation",
+      "source_status": "lecture",
+      "question": "Calculate the physical address: 1000H:0100H.",
+      "options": {
+        "A": "10000H",
+        "B": "10100H",
+        "C": "11000H",
+        "D": "10010H"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክለኛው ስሌት፦ 1000H × 10H = 10000H፤ 10000H + 0100H = 10100H። ጀግና፣ መሠረቱን ከoffset ጋር አንድ ላይ አድርግ!",
+      "explanation_en": "Correct answer: 10100H."
+    },
+    {
+      "id": 85,
+      "topic": "Memory segmentation",
+      "source_status": "lecture",
+      "question": "Calculate the physical address: 89ABH:F012H.",
+      "options": {
+        "A": "89AB0H",
+        "B": "98AC2H",
+        "C": "97AC2H",
+        "D": "98AB2H"
+      },
+      "correct_answer": "B",
+      "explanation_am": "በስላይዱ ያለው ምሳሌ ነው፦ 89ABH × 10H = 89AB0H፤ 89AB0H + F012H = 98AC2H። የhex መደመርን በትዕግሥት አድርግ!",
+      "explanation_en": "Correct answer: 98AC2H."
+    },
+    {
+      "id": 86,
+      "topic": "Memory segmentation",
+      "source_status": "lecture",
+      "question": "If the segment base is 34BA0H and the offset is FFFFH, what is the final address?",
+      "options": {
+        "A": "34BA0H",
+        "B": "44B9FH",
+        "C": "44BA0H",
+        "D": "43B9FH"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 34BA0H + FFFFH = 44B9FH። FFFFH የ16-bit offset ከፍተኛ እሴት ነው፤ የመጨረሻ ቦታውን በትክክል ጨምር!",
+      "explanation_en": "Correct answer: 44B9FH."
+    },
+    {
+      "id": 87,
+      "topic": "Default segment pairs",
+      "source_status": "lecture",
+      "question": "Which segment:offset pair is used for ordinary data addressed through BX?",
+      "options": {
+        "A": "CS:BX",
+        "B": "SS:BX",
+        "C": "DS:BX",
+        "D": "ES:BX"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! BX በdefault ከDS ጋር ይጣመራል፤ ስለዚህ DS:BX ነው። የstack ሬጂስተር BP ሲሆን የተለየ ህግ አለው።",
+      "explanation_en": "Correct answer: DS:BX."
+    },
+    {
+      "id": 88,
+      "topic": "Default segment pairs",
+      "source_status": "lecture",
+      "question": "Which segment:offset pair is normally used for stack data addressed through BP?",
+      "options": {
+        "A": "DS:BP",
+        "B": "SS:BP",
+        "C": "CS:BP",
+        "D": "ES:BP"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BP በdefault SS ከሚጠቀምበት የstack ክፍል ጋር ይጣመራል። BP ካየህ SSን አስታውስ!",
+      "explanation_en": "Correct answer: SS:BP."
+    },
+    {
+      "id": 89,
+      "topic": "Default segment pairs",
+      "source_status": "lecture",
+      "question": "Which segment:offset pair is normally used for source data in string operations?",
+      "options": {
+        "A": "ES:DI",
+        "B": "DS:SI",
+        "C": "SS:SP",
+        "D": "CS:IP"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! የstring source በDS:SI ይገኛል። Source = SI፣ የተለመደ segment = DS።",
+      "explanation_en": "Correct answer: DS:SI."
+    },
+    {
+      "id": 90,
+      "topic": "Default segment pairs",
+      "source_status": "lecture",
+      "question": "Which segment:offset pair is normally used for the string destination?",
+      "options": {
+        "A": "DS:SI",
+        "B": "SS:BP",
+        "C": "ES:DI",
+        "D": "CS:IP"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! String destination = ES:DI። DI የdestination index ነው፤ ES የextra segment መሠረት ነው።",
+      "explanation_en": "Correct answer: ES:DI."
+    },
+    {
+      "id": 91,
+      "topic": "BIU",
+      "source_status": "lecture",
+      "question": "Which component in the BIU calculates the 20-bit physical address?",
+      "options": {
+        "A": "Instruction decoder",
+        "B": "Address-summing/adder circuit",
+        "C": "Flag register",
+        "D": "ALU only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BIU ውስጥ ያለው address-summing block segment baseን ከoffset ጋር ያደምራል። ይህ ነው 20-bit አድራሻውን የሚፈጥረው!",
+      "explanation_en": "Correct answer: Address-summing/adder circuit."
+    },
+    {
+      "id": 92,
+      "topic": "BIU",
+      "source_status": "lecture",
+      "question": "Which set lists components contained in the BIU according to the lecture?",
+      "options": {
+        "A": "ALU, flags, AX and BX",
+        "B": "IP, segment registers, 6-byte queue and address-summing block",
+        "C": "SP, BP, SI and DI only",
+        "D": "Decoder, control system and ALU only"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BIU ውስጥ IP፣ CS/DS/ES/SS፣ 6-byte instruction queue እና address-summing block አሉ። EU ከBIU ጋር አትቀላቅል!",
+      "explanation_en": "Correct answer: IP, segment registers, 6-byte queue and address-summing block."
+    },
+    {
+      "id": 93,
+      "topic": "BIU",
+      "source_status": "lecture",
+      "question": "What happens when the EU begins executing instructions already in the queue?",
+      "options": {
+        "A": "The BIU can fetch more instruction bytes at the same time",
+        "B": "The BIU permanently stops",
+        "C": "The queue changes to LIFO",
+        "D": "The flags are erased"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! EU ያለውን ሲያስኬድ BIU ቀጣይ መመሪያዎችን ሊያመጣ ይችላል። ይህ መደራረብ pipelining ይባላል!",
+      "explanation_en": "Correct answer: The BIU can fetch more instruction bytes at the same time."
+    },
+    {
+      "id": 94,
+      "topic": "IP",
+      "source_status": "lecture",
+      "question": "What happens to IP as instruction fetching advances normally?",
+      "options": {
+        "A": "It is automatically updated to point to the next instruction offset",
+        "B": "It always remains zero",
+        "C": "It stores the physical address permanently",
+        "D": "It becomes the stack pointer"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! IP በcode segment ውስጥ የቀጣይ መመሪያ offsetን ይይዛል እና ይዘቱ ይዘምናል።",
+      "explanation_en": "Correct answer: It is automatically updated to point to the next instruction offset."
+    },
+    {
+      "id": 95,
+      "topic": "EU",
+      "source_status": "lecture",
+      "question": "Which unit contains the 16-bit ALU and flag register?",
+      "options": {
+        "A": "BIU",
+        "B": "EU",
+        "C": "Instruction queue",
+        "D": "Address bus"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! EU 16-bit ALU፣ flag register፣ control system፣ decoder እና ሬጂስተሮችን ይይዛል።",
+      "explanation_en": "Correct answer: EU."
+    },
+    {
+      "id": 96,
+      "topic": "EU",
+      "source_status": "lecture",
+      "question": "Which component manages the internal operations of the execution unit?",
+      "options": {
+        "A": "Control system",
+        "B": "ES register",
+        "C": "Instruction queue",
+        "D": "Address bus"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! Control system የEU ውስጣዊ ስራዎችን ይቆጣጠራል። Decoder መመሪያን ይፈታል፤ ALU ስሌት ይሰራል።",
+      "explanation_en": "Correct answer: Control system."
+    },
+    {
+      "id": 97,
+      "topic": "EU",
+      "source_status": "lecture",
+      "question": "Which of the following operations is performed by the ALU?",
+      "options": {
+        "A": "Addition and logical AND",
+        "B": "Holding the code segment base only",
+        "C": "Fetching instructions from memory only",
+        "D": "Storing the instruction queue only"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! ALU መደመር፣ መቀነስ፣ AND/OR/XOR፣ complement እና shifting ያከናውናል።",
+      "explanation_en": "Correct answer: Addition and logical AND."
+    },
+    {
+      "id": 98,
+      "topic": "General registers",
+      "source_status": "lecture",
+      "question": "Which register can be split into AH and AL?",
+      "options": {
+        "A": "AX",
+        "B": "CS",
+        "C": "IP",
+        "D": "SP"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! AX ወደ AH (high byte) እና AL (low byte) ይከፈላል። Segment register CS ግን እንዲህ አይከፈልም!",
+      "explanation_en": "Correct answer: AX."
+    },
+    {
+      "id": 99,
+      "topic": "General registers",
+      "source_status": "lecture",
+      "question": "If BX=ABCDH, what are BH and BL?",
+      "options": {
+        "A": "BH=CDH, BL=ABH",
+        "B": "BH=ABH, BL=CDH",
+        "C": "BH=ABCDH, BL=00H",
+        "D": "BH=00H, BL=ABCDH"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BH ከፍተኛው byte ABH ነው፤ BL ዝቅተኛው CDH ነው። H=high፣ L=low ብለህ አስታውስ!",
+      "explanation_en": "Correct answer: BH=ABH, BL=CDH."
+    },
+    {
+      "id": 100,
+      "topic": "General registers",
+      "source_status": "lecture",
+      "question": "Which register is particularly associated with multiplication/division and can hold I/O port numbers?",
+      "options": {
+        "A": "DX",
+        "B": "ES",
+        "C": "IP",
+        "D": "BP"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! DX በword-size MUL/DIV ከAX ጋር ይሰራል፤ ለIN/OUT የport number ሊይዝም ይችላል።",
+      "explanation_en": "Correct answer: DX."
+    },
+    {
+      "id": 101,
+      "topic": "Pointer/index registers",
+      "source_status": "lecture",
+      "question": "Which statement about BP is correct?",
+      "options": {
+        "A": "It only points to the next instruction",
+        "B": "It is primarily used to access data in the stack segment and can also address other segments",
+        "C": "It is the extra segment register",
+        "D": "It stores only the carry flag"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! BP በተለምዶ የstack ዳታን ለመድረስ ይጠቅማል፣ ግን በተወሰኑ አድራሻ አይነቶች ሌሎች segment-ዎችንም ሊያመለክት ይችላል።",
+      "explanation_en": "Correct answer: It is primarily used to access data in the stack segment and can also address other segments."
+    },
+    {
+      "id": 102,
+      "topic": "Pointer/index registers",
+      "source_status": "lecture",
+      "question": "Which registers are 16-bit offset holders used as memory pointers?",
+      "options": {
+        "A": "AX, BX, CX, DX only",
+        "B": "SP, BP, SI, DI",
+        "C": "CS, DS, SS, ES",
+        "D": "CF, PF, AF, ZF"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! SP፣ BP፣ SI እና DI 16-bit ናቸው፣ እንደ memory pointer/index ይጠቅማሉ።",
+      "explanation_en": "Correct answer: SP, BP, SI, DI."
+    },
+    {
+      "id": 103,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "In MOV AX, [SI], what does the square-bracketed operand indicate?",
+      "options": {
+        "A": "The immediate number SI",
+        "B": "The memory location whose offset is in SI",
+        "C": "The SI register's segment base",
+        "D": "The value of the carry flag"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! [SI] ማለት SI የሚያመለክተው memory ቦታ ነው፤ SI ውስጥ ያለውን ቁጥር በቀጥታ አይደለም።",
+      "explanation_en": "Correct answer: The memory location whose offset is in SI."
+    },
+    {
+      "id": 104,
+      "topic": "Addressing modes",
+      "source_status": "lecture",
+      "question": "Which register combination is commonly used for based-indexed addressing in 8086?",
+      "options": {
+        "A": "BX or BP combined with SI or DI",
+        "B": "CS combined with IP only",
+        "C": "Flags combined with AX",
+        "D": "ES combined with the queue"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! Based-indexed addressing እንደ BX+SI፣ BX+DI፣ BP+SI ወይም BP+DI ያሉ ጥምረቶችን ሊጠቀም ይችላል።",
+      "explanation_en": "Correct answer: BX or BP combined with SI or DI."
+    },
+    {
+      "id": 105,
+      "topic": "Segment overrides",
+      "source_status": "supplementary_not_explicitly_explained_in_slides",
+      "question": "Why might a program use a segment override?",
+      "options": {
+        "A": "To explicitly select a segment register other than the default for a memory operand",
+        "B": "To increase the address bus to 32 bits",
+        "C": "To disable the ALU",
+        "D": "To make a 16-bit register 20 bits wide"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ተጨማሪ ጽንሰ-ሀሳብ፦ Segment override ለmemory operand ከdefault segment የተለየ ሬጂስተር በግልጽ ለመምረጥ ይጠቅማል። ይህ ክፍል በPPT በቀጥታ አልተብራራም።",
+      "explanation_en": "Correct answer: To explicitly select a segment register other than the default for a memory operand."
+    },
+    {
+      "id": 106,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "In the example AL=7FH followed by ADD AL,1, what is the 8-bit result?",
+      "options": {
+        "A": "7FH",
+        "B": "80H",
+        "C": "00H",
+        "D": "FFH"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 7FH + 01H = 80H። በsigned ትርጉም ከፍተኛው bit 1 ስለሆነ ውጤቱ negative ይመስላል፤ ይህም OF=1 ያደርጋል።",
+      "explanation_en": "Correct answer: 80H."
+    },
+    {
+      "id": 107,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "For AL=7FH and ADD AL,1, what are CF and OF?",
+      "options": {
+        "A": "CF=1, OF=0",
+        "B": "CF=0, OF=1",
+        "C": "CF=1, OF=1",
+        "D": "CF=0, OF=0"
+      },
+      "correct_answer": "B",
+      "explanation_am": "በጥንቃቄ! 7FH + 1 = 80H። ከbit 7 ውጭ carry ስለሌለ CF=0፤ ግን signed positive ወደ negative ስለተለወጠ OF=1።",
+      "explanation_en": "Correct answer: CF=0, OF=1."
+    },
+    {
+      "id": 108,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "For AL=7FH and ADD AL,1, what is AF?",
+      "options": {
+        "A": "0, because there is no carry from bit 3 to bit 4",
+        "B": "1, because there is a carry from bit 3 to bit 4",
+        "C": "Always 1 after ADD",
+        "D": "It cannot change"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 7FH + 1 ሲደረግ ከbit 3 ወደ bit 4 carry አለ፤ ስለዚህ AF=1። AF በተለይ ለBCD ስሌት ጠቃሚ ነው።",
+      "explanation_en": "Correct answer: 1, because there is a carry from bit 3 to bit 4."
+    },
+    {
+      "id": 109,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "For AL=7FH and ADD AL,1, why is SF=1?",
+      "options": {
+        "A": "Because bit 7 of the 8-bit result 80H is 1",
+        "B": "Because the result is zero",
+        "C": "Because the queue is full",
+        "D": "Because the segment is SS"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! 80H በ8-bit መልክ 10000000 ነው፤ bit 7 = 1 ስለሆነ SF=1።",
+      "explanation_en": "Correct answer: Because bit 7 of the 8-bit result 80H is 1."
+    },
+    {
+      "id": 110,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "For AL=7FH and ADD AL,1, why is ZF=0?",
+      "options": {
+        "A": "The result 80H is not zero",
+        "B": "The result is negative",
+        "C": "There was no carry",
+        "D": "The instruction was fetched"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! ውጤቱ 80H ነው፣ ዜሮ አይደለም፤ ስለዚህ ZF=0።",
+      "explanation_en": "Correct answer: The result 80H is not zero."
+    },
+    {
+      "id": 111,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "For AL=7FH and ADD AL,1, why is PF=0?",
+      "options": {
+        "A": "The result 80H contains one 1-bit, which is odd parity",
+        "B": "The result contains no bits",
+        "C": "Parity is always zero after ADD",
+        "D": "The result is 16-bit"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! 80H = 10000000 አንድ ብቻ የ1 bit አለው፤ ብዛቱ ጎዶሎ ስለሆነ PF=0።",
+      "explanation_en": "Correct answer: The result 80H contains one 1-bit, which is odd parity."
+    },
+    {
+      "id": 112,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "What does the Auxiliary Carry Flag indicate?",
+      "options": {
+        "A": "Carry from bit 3 to bit 4, or the corresponding borrow",
+        "B": "The next instruction offset",
+        "C": "Whether the stack is empty",
+        "D": "Whether the CPU is in maximum mode"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! AF ከbit 3 ወደ bit 4 የሚወጣ carry ወይም ተመሳሳይ borrow ያመለክታል። BCD ላይ ይህ አስፈላጊ ነው!",
+      "explanation_en": "Correct answer: Carry from bit 3 to bit 4, or the corresponding borrow."
+    },
+    {
+      "id": 113,
+      "topic": "Flags",
+      "source_status": "lecture",
+      "question": "What does Trap Flag (TF) control, according to the lecture?",
+      "options": {
+        "A": "Single-step/trap behavior after instruction execution",
+        "B": "String direction",
+        "C": "Carry from bit 3 to bit 4",
+        "D": "The data segment base"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! TF ከsingle-step/trap ባህሪ ጋር ይያያዛል፤ መመሪያዎችን በደረጃ ለመከታተል ይጠቅማል።",
+      "explanation_en": "Correct answer: Single-step/trap behavior after instruction execution."
+    },
+    {
+      "id": 114,
+      "topic": "Rotate instructions",
+      "source_status": "lecture",
+      "question": "What does RCL stand for?",
+      "options": {
+        "A": "Rotate Carry Left",
+        "B": "Rotate Carry Load",
+        "C": "Read Code Location",
+        "D": "Reset Carry Logic"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! RCL = Rotate through Carry Left። Bit-ዎች በCarry Flag በኩል ይዞራሉ፤ ስሙን በትክክል አስታውስ!",
+      "explanation_en": "Correct answer: Rotate Carry Left."
+    },
+    {
+      "id": 115,
+      "topic": "Rotate instructions",
+      "source_status": "lecture",
+      "question": "What does RCR stand for?",
+      "options": {
+        "A": "Rotate Carry Right",
+        "B": "Reset Carry Register",
+        "C": "Read Code Register",
+        "D": "Rotate Counter Right"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! RCR = Rotate through Carry Right። የቀኝ አቅጣጫ ሲሆን Carry Flag የrotation ክፍል ነው።",
+      "explanation_en": "Correct answer: Rotate Carry Right."
+    },
+    {
+      "id": 116,
+      "topic": "Rotate instructions",
+      "source_status": "lecture",
+      "question": "What does ROL do to the leftmost bit that rotates out?",
+      "options": {
+        "A": "Discards it permanently",
+        "B": "Wraps it to the rightmost bit and copies it to CF",
+        "C": "Moves it to IP",
+        "D": "Clears all flags"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ROL የግራ ጫፍ bitን ወደ ቀኝ ጫፍ ያመጣል እና ወደ CF ይቀዳዋል።",
+      "explanation_en": "Correct answer: Wraps it to the rightmost bit and copies it to CF."
+    },
+    {
+      "id": 117,
+      "topic": "Rotate instructions",
+      "source_status": "lecture",
+      "question": "For ROR, if AL=10010110 and the least-significant bit is 0, what is the result after one rotate right?",
+      "options": {
+        "A": "00101101",
+        "B": "01001011",
+        "C": "11001011",
+        "D": "10010110"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! የቀኝ ጫፍ bit 0 ነው፤ ወደ ግራ ጫፍ ይመለሳል። 10010110 → 01001011፣ CF=0።",
+      "explanation_en": "Correct answer: 01001011."
+    },
+    {
+      "id": 118,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "Which register specifies the stack segment's base?",
+      "options": {
+        "A": "DS",
+        "B": "CS",
+        "C": "SS",
+        "D": "ES"
+      },
+      "correct_answer": "C",
+      "explanation_am": "Stack ሲባል SS ነው! SS የstack segment baseን ይይዛል፣ SP ደግሞ በዚያ segment ውስጥ ያለውን offset ይጠቁማል።",
+      "explanation_en": "Correct answer: SS."
+    },
+    {
+      "id": 119,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "What is the relationship between SS and SP?",
+      "options": {
+        "A": "SS identifies the stack segment and SP gives the top-of-stack offset",
+        "B": "SS is the offset and SP is the code segment",
+        "C": "Both are flag bits",
+        "D": "SP stores the physical address in 20 bits"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! SS የstack ክፍሉን ያሳያል፤ SP በዚያ ክፍል ውስጥ የstack top offsetን ይይዛል። Segment እና offset ሁለቱም ያስፈልጋሉ!",
+      "explanation_en": "Correct answer: SS identifies the stack segment and SP gives the top-of-stack offset."
+    },
+    {
+      "id": 120,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "What is the main difference between PUSH and POP?",
+      "options": {
+        "A": "PUSH removes an item and POP inserts one",
+        "B": "PUSH inserts an item and POP removes the top item",
+        "C": "Both only read instructions",
+        "D": "Both clear the stack"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! PUSH ወደ stack ያስገባል፤ POP ከላይ ያለውን ያወጣል። አትቀያይር፤ እንደ ጫማ ግራና ቀኝ አይደሉም!",
+      "explanation_en": "Correct answer: PUSH inserts an item and POP removes the top item."
+    },
+    {
+      "id": 121,
+      "topic": "Stack",
+      "source_status": "lecture",
+      "question": "If a stack is empty and TOP is initialized to −1, what is TOP after one item is pushed in the lecture's example?",
+      "options": {
+        "A": "−1",
+        "B": "0",
+        "C": "1",
+        "D": "16"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! ባዶ ሲሆን TOP=−1፤ አንድ ንጥል ሲገባ TOP=0 ይሆናል።",
+      "explanation_en": "Correct answer: 0."
+    },
+    {
+      "id": 122,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "How many bits are used for one byte?",
+      "options": {
+        "A": "4",
+        "B": "7",
+        "C": "8",
+        "D": "16"
+      },
+      "correct_answer": "C",
+      "explanation_am": "ትክክል! 1 byte = 8 bits። ይህ የchapter መሠረታዊ መለኪያ ነው፤ እንደ ሻይ ስኳር አትርሳው!",
+      "explanation_en": "Correct answer: 8."
+    },
+    {
+      "id": 123,
+      "topic": "Data types",
+      "source_status": "lecture",
+      "question": "How many bytes are in one 16-bit word?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "8"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 16 bits = 2 bytes። ስለዚህ word ሁለት byte ይይዛል።",
+      "explanation_en": "Correct answer: 2."
+    },
+    {
+      "id": 124,
+      "topic": "ASCII",
+      "source_status": "lecture",
+      "question": "According to the slide, how is ASCII character '5' stored in one byte?",
+      "options": {
+        "A": "01010101",
+        "B": "00110101",
+        "C": "01100101",
+        "D": "00000101"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በስላይዱ መሠረት ASCII '5' 7-bit 0110101 ነው፤ በbyte ውስጥ 00110101 ሆኖ ይቀመጣል።",
+      "explanation_en": "Correct answer: 00110101."
+    },
+    {
+      "id": 125,
+      "topic": "ASCII",
+      "source_status": "lecture",
+      "question": "The lecture's memory bytes decode to which string?",
+      "options": {
+        "A": "ABCDE",
+        "B": "ASCII",
+        "C": "8086",
+        "D": "HELLO"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! በስላይዱ ምሳሌ በ01100 እስከ 01104 ያሉት ASCII bytes 'ASCII' ይሆናሉ።",
+      "explanation_en": "Correct answer: ASCII."
+    },
+    {
+      "id": 126,
+      "topic": "BCD",
+      "source_status": "lecture",
+      "question": "In packed BCD, what does each 4-bit nibble represent?",
+      "options": {
+        "A": "One decimal digit",
+        "B": "Two decimal digits",
+        "C": "One ASCII character",
+        "D": "One address segment"
+      },
+      "correct_answer": "A",
+      "explanation_am": "ትክክል! Packed BCD እያንዳንዱ 4-bit nibble አንድ decimal digit ይወክላል፤ አንድ byte ሁለት digits ይይዛል።",
+      "explanation_en": "Correct answer: One decimal digit."
+    },
+    {
+      "id": 127,
+      "topic": "8086 features",
+      "source_status": "lecture",
+      "question": "How many instruction bytes can the 8088 prefetch queue hold, according to the lecture?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_answer": "B",
+      "explanation_am": "ትክክል! 8088 4-byte prefetch queue አለው፤ 8086 ግን 6-byte ነው። ሁለቱን ቁጥር አትቀያይር!",
+      "explanation_en": "Correct answer: 4."
+    }
+  ]
+}
